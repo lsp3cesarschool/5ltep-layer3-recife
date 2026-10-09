@@ -1,0 +1,129 @@
+{
+ "pt": {
+  "4b27fc1e84548736340a31ec81c6f0ed439f7fefd64fe37b0cf25771c63765fb": {
+   "text": "Infrações de trânsito do Recife (CTTU), Brasil",
+   "model": "manual",
+   "version": "manual"
+  },
+  "d91724b071ee9b5299c7d1077b3199d170e9e8810c43f8faef52fd3c2e81e923": {
+   "text": "Número de infrações de trânsito registradas no mês pela CTTU, por agentes e por equipamentos eletrônicos de fiscalização",
+   "model": "manual",
+   "version": "manual"
+  },
+  "76ae40bea8d3cca8273397dec83f90b5eaa8591e581c4eaa4537889b6ac146f4": {
+   "text": "Mudança por política: legislação de trânsito, novos equipamentos ou programas de fiscalização, reorganização da agência ou transição política",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "94a401b50e5394c0b8695cff5d56d7a107a1713ed1bbc4483b7f62fe0e3d586a": {
+   "text": "Padrão sazonal: ciclo anual recorrente (feriados, Carnaval, calendário escolar)",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "6653d4619f3da951fbe2e946dc1bb96be8d2ede8fe82e3e4f0be31e5db3e1868": {
+   "text": "Evento de qualidade de dados: falha no relatório, migração de sistema, acúmulo, duplicação ou correção retroativa",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "0038fd348722c3347ad6714f441a1e7e48bca56e2d38bf4be876c1ff791dbd75": {
+   "text": "Mudança genuína de fiscalização: uma mudança real na intensidade de fiscalização ou no comportamento do motorista não explicada pelas acima",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "15a26e6a7c863e13bb15e5a6e285bd14259cef1f93be0d9a717ed26bdead4c79": {
+   "text": "Lei Seca: zero tolerance for alcohol at the wheel, with heavier penalties",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "3dcde3ab6f92a0bb4954d1c217c8d6d27e4f7f166950b259c5936b7415adb81f": {
+   "text": "Troca de gestão municipal no Recife",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "08ee177a208a7cb4e7e04e15294c93cf3be28b4c2a31c7cb97821eaac41dacde": {
+   "text": "Nova Lei Seca: regras mais rigorosas para evidências de dirigir sob efeito de álcool e uma multa maior",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "dc957a950736459f308e6fd725c9cbede36b84e30b29128ddeddb410223d9d0c": {
+   "text": "FIFA World Cup matches in the Recife metropolitan area (Arena Pernambuco)",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "b77ab10b37f40ffd28194be66af5fa938977f439e93ec8d6feec99d2125ad5af": {
+   "text": "Amendamento do Código de Trânsito Brasileiro em vigor: valores de multa mais altos e novas infrações",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "2c57e9e569f36f668b221dc14c52aebd395c4927faa72ebd79d46f6c4dc50ce1": {
+   "text": "Pandemia de COVID-19 declarada; medidas de emergência em saúde pública no Brasil",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "4da0470c817fc0061ab3f00ff523bed60d3c34fa2d30ee5b74bf1848a0f0e526": {
+   "text": "Amendamento do Código de Trânsito Brasileiro em vigor: novo sistema de pontos, validade do licenciamento e penalidades",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "993e3116dba8452db3cce30d1acce739811eba588b9bd7338f3a0b6f17b23f4e": {
+   "text": "O mês anômalo é junho de 2006 (2 notificações vs mediana dos 12 meses anteriores de 1). A verificação de sazonalidade mostra sem dados dos anos anteriores para junho (n/a), portanto não há padrão sazonal. Não há eventos dentro de ±6 meses. Os registros mostram sem registros excluídos ou sem id, e a queda para zero em julho-agosto é seguida por um pico em novembro e um aumento massivo em dezembro de 2006, sugerindo um problema de dados (ex.: atraso ou correção retroativa) em vez de uma mudança real. A pontuação do ensemble (0,28) é baixa e não foi detectada mudança de nível sustentada. Portanto, DQE é a melhor categoria.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "16a0f116b01b72da0ffcd4d70900fae07c03c4e8d8be4f220ad67b69d700644b": {
+   "text": "O mês anômalo (2006-10) tem 0 infrações, enquanto a mediana dos 12 meses anteriores é 1. A verificação de sazonalidade mostra que nenhum ano anterior tem dados para este mês, portanto não há padrão sazonal. Não há eventos dentro de +-6 meses. Os dados mostram que não há registros excluídos ou no_id para 2006-10, mas há uma mudança de nível sustentada nos meses seguintes (2007-01 a 2007-10). O valor zero é implausível para uma série de infrações de trânsito ativa, sugerindo problemas de qualidade de dados como falha no relato ou migração de sistema. Como não há eventos que expliquem isso e a sazonalidade está ausente, DQE é o melhor fit.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "4fb8407bf00458d0d29d311f11f48e90bb416f6b8b338c42fbfd87a52d583e77": {
+   "text": "A anomalia em 2006-11 é de 5 infrações, com mediana dos 12 meses anteriores de 0,5 (aumento de 900%). A verificação de sazonalidade não apresenta anos anteriores para comparação. Nenhum outro mês foi sinalizado. O teste Page-Hinkley indica uma mudança de nível sustentada em até 2 meses. O contexto mensal mostra um salto dramático de 0 em 2006-10 para 5 em 2006-11, seguido de um pico massivo em 2006-12 (7.525) e meses subsequentes (13k+). Este aumento abrupto e persistente sem eventos conhecidos sugere um problema de qualidade de dados: provavelmente uma migração de sistema única ou um atraso que causou uma explosão de registros de meses anteriores a serem incluídos retroativamente em 2006-11. Não há padrões sazonais ou eventos políticos indicados.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "79c63aed76f4aaa700efb32a593ce6c302d79767343ddb64bf271312edfcb7d5": {
+   "text": "A verificação de sazonalidade mostra que não há dados históricos para anos anteriores (n/a) e que o mesmo mês nunca se desviou na mesma direção (0 de 0 anos). A anomalia em 2007-05 é um aumento massivo (4118x) comparado com a mediana dos meses anteriores. Não há registros excluídos ou no_id, indicando ausência de problemas de qualidade de dados. Nenhum evento conhecido explica o pico. O teste Page-Hinkley mostra que não há mudança sustentada de nível, descartando mudanças recentes. Dado o desvio extremo sem contexto histórico ou eventos, este é uma mudança genuína de fiscalização (GES) com alta confiança.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "fba5e2a12f3c555077c572110a8de6dc51158a6a5677b0597c2e9057975f3486": {
+   "text": "A anomalia é dezembro de 2007 com 5.495 infrações (40% da mediana dos 12 meses anteriores). A verificação de sazonalidade mostra nenhum padrão histórico para dezembro (n/a) e não foi anomalia em anos anteriores. O evento conhecido em junho de 2008 (Lei Seca) é muito tarde para explicar dezembro de 2007. Os registros mostram nenhuma exclusão ou IDs faltantes, descartando DQE. Nenhuma outra série sinalizada no mesmo mês. A queda é abrupta, mas não houve mudança por política anteriormente. Isso é uma mudança genuína de fiscalização (GES) com alta confiança, já que nenhum outro fator a explica.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "772f22d5697f0aa6078598dec4674362a849963f66e134741b3f4f43e84ec2d4": {
+   "text": "A verificação de sazonalidade mostra que 2011-07 se desvia abaixo da mediana (0.59) enquanto os anos anteriores (2007-2010) possuem razões acima de 1,0 (todos >0,93). Apenas um dos quatro anos apresentou uma desvio descendente semelhante. O mês não foi sinalizado em outros anos. O teste Page-Hinkley confirma uma mudança de nível sustentada em até 2 meses, sugerindo uma mudança estrutural. Não há eventos conhecidos. Os registros mostram nenhuma exclusão ou IDs faltantes, descartando problemas de dados. Assim, a anomalia é provavelmente uma mudança genuína de fiscalização (GES).",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "c61bda065e5dc111e39a2e95395456ac2a2b1cbaf0ebee3ed618a870911f7bce": {
+   "text": "A anomalia em 2013-09 é de 39.168 infrações (1,96x mediana dos 12 meses anteriores). Verificação de sazonalidade: 2012-09:1,00; 2011-09:1,01; 2010-09:1,39; 2009-09:1,35; 2008-09:0,79; 2007-09:1,20. O mesmo mês se desviou acima de 1 em 5 de 6 anos. Como o mesmo mês foi sinalizado como anomalo em nenhum outro ano, não é sazonal (SP). Não há eventos conhecidos dentro de +-6 meses. Os registros mostram 0 registros excluídos ou sem id, sem sinais de qualidade de dados (DQE). O teste Page-Hinkley confirma uma mudança de nível sustentada em até 2 meses, mas não há evento que explique isso. Portanto, é uma mudança genuína de fiscalização (GES).",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "9023f4b799b9e6ce8401f9a0aeda016d6ea067b1b2f378876386dac89f9ae92c": {
+   "text": "Verificação de sazonalidade mostra que o mesmo mês (2013-10) se desviou consistentemente acima da mediana em 5 de 6 anos (2007-2012). A mediana dos 12 meses anteriores (2012-10) é 21,410, enquanto 2013-10 é 48,993 (2,29x maior). As razões dos anos anteriores (2012-10:1,13; 2011-10:0,98; 2010-10:1,28; etc.) se desviaram acima de 1 em 5/6 anos. O mesmo mês foi sinalizado como anomalia em 2006-10, reforçando o padrão sazonal. Não há eventos em +-6 meses e nenhum sinal de qualidade de dados (registros excluídos/não_id são 0). O teste Page-Hinkley confirma mudança de nível sustentada, mas isso é consequência do padrão sazonal, não um problema de qualidade de dados.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "56f1e5ffc95abd1c80ff4f775f14ce64e73121bc2ee6aa2e6e384113f3decd61": {
+   "text": "Verificação de sazonalidade mostra que dezembro se desviou acima da mediana em 6 de 10 anos (2011-2017), com uma tendência ascendente na razão. No entanto, o valor 2017-12 é muito alto (72.403 vs mediana 49.016). O teste Page-Hinkley indica uma mudança de nível sustentada em até 2 meses, sugerindo uma mudança estrutural. Não houve eventos listados no período. Verificações de qualidade de dados mostram que não há registros excluídos ou sem id, portanto, não é um problema de dados. A anomalia não é explicada por sazonalidade (já que dezembro não é consistentemente alto em outros anos) ou eventos de política. A grande desvio com uma mudança persistente aponta para uma mudança genuína de fiscalização (GES).",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "f0e4ce5009b5be310dabd846cf447fdd197cb29f32ea3d1f812291a9e1d7d9bd": {
+   "text": "Verificação de sazonalidade mostra que 7/1.000 anos tiveram razão <1 para abril (abaixo da mediana). Este padrão confirma a deviação sazonal (etapa 1). Não há eventos plausíveis que expliquem a queda de abril (apenas a COVID-19 em março, mas os efeitos da pandemia geralmente impactam meses posteriores). Os checks de qualidade de dados mostram que não há registros excluídos/não_id (etapa 3). O teste Page-Hinkley indica uma mudança sustentada, mas sem problemas nos dados. Portanto, a anomalia é sazonal (SP).",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "4286e63aab6f6da9811f44b5d3942127718df0c522854b624910dcc65953609e": {
+   "text": "Verificação de sazonalidade mostra que 2020-05 está abaixo da mediana (razão 0,31) e 6 de 10 anos anteriores tiveram tendências similares de queda. No entanto, a mediana dos 12 meses anteriores (67.777) é muito maior que o valor de 2020-05 (21.127), indicando uma queda abrupta. O teste Page-Hinkley confirma uma mudança de nível sustentada em até 2 meses, mas não há problemas de qualidade de dados (registros excluídos/não_id = 0). Evento conhecido: pandemia de COVID-19 (2020-03) provavelmente causou a queda, mas isso é uma mudança por política (PDC) como é uma emergência de saúde pública afetando a fiscalização. A sazonalidade não explica a magnitude da queda. Não há problemas de qualidade de dados observados (sem bursts ou valores implausíveis).",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  },
+  "0f6a16c8a8526f1f5886ca721234f954e1dd193a95fd74b83c23beca76647aba": {
+   "text": "Verificação de sazonalidade mostra tendência descendente consistente em dezembro desde 2012 (todas as razões <1). 5/10 anos tiveram direção semelhante de desvio. Também sinalizado em 2007-12, 2017-12. No entanto, o teste Page-Hinkley confirma mudança de nível sustentada (não apenas sazonal). Não há eventos em +-6 meses. Os registros mostram nenhuma exclusão ou problemas de no_id. A anomalia é uma queda verdadeira (37k vs mediana 50k) sem explicação obvia, mas a qualidade de dados está limpa (0 exclusões). Isso se encaixa no DQE como única explicação plausível para a queda persistente sem eventos, dada a qualidade de dados limpa.",
+   "model": "qwen3:4b",
+   "version": "b0577c24905c"
+  }
+ }
+}

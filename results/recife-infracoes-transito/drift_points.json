@@ -1,0 +1,53 @@
+{
+ "notices": [
+  {
+   "index": 6,
+   "alarm_index": 7,
+   "direction": "up",
+   "month": "2006-11",
+   "alarm_month": "2006-12"
+  },
+  {
+   "index": 36,
+   "alarm_index": 43,
+   "direction": "up",
+   "month": "2009-05",
+   "alarm_month": "2009-12"
+  },
+  {
+   "index": 50,
+   "alarm_index": 89,
+   "direction": "up",
+   "month": "2010-07",
+   "alarm_month": "2013-10"
+  },
+  {
+   "index": 99,
+   "alarm_index": 113,
+   "direction": "up",
+   "month": "2014-08",
+   "alarm_month": "2015-10"
+  },
+  {
+   "index": 134,
+   "alarm_index": 150,
+   "direction": "up",
+   "month": "2017-07",
+   "alarm_month": "2018-11"
+  },
+  {
+   "index": 166,
+   "alarm_index": 168,
+   "direction": "down",
+   "month": "2020-03",
+   "alarm_month": "2020-05"
+  },
+  {
+   "index": 176,
+   "alarm_index": 210,
+   "direction": "down",
+   "month": "2021-01",
+   "alarm_month": "2023-11"
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "profile": "recife-infracoes-transito",
+ "profile_sha256": "a96509f57fba56b301e362182e85f5c468245acac7e0fc3f1c0dd8d30f1038cf",
+ "as_of": "2026-10-09T18:59:15.463791",
+ "dataset_id": "registro-das-infracoes-de-transito",
+ "dataset_url": "https://dados.recife.pe.gov.br/dataset/registro-das-infracoes-de-transito",
+ "dataset_metadata_modified": "2026-07-01T19:58:24.878951",
+ "license": "Open Data Commons Open Database License (ODbL)",
+ "resource_name": "20 resources matching 'registro d[ae]s? infra[çc][õo]es de tr[âa]nsito - \\\\d{4}'",
+ "resource_url": "https://dados.recife.pe.gov.br/dataset/registro-das-infracoes-de-transito",
+ "download_started_at": "2026-10-09T18:59:18+00:00",
+ "size_bytes": 2151895407,
+ "checksum_sha256": "c0cc38cf773545bc083baa262cbb78115cf17c15ade5dcbfb9a181b5d506476d",
+ "resources": [
+  {
+   "resource_id": "b666b401-c35c-41f3-bc09-3398ee2dd542",
+   "resource_name": "Registro da infrações de transito - 2009",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/b666b401-c35c-41f3-bc09-3398ee2dd542/download/registro-da-infracoes-de-transito-2009.csv",
+   "download_started_at": "2026-10-09T18:59:18+00:00",
+   "size_bytes": 51192866,
+   "checksum_sha256": "f1965f2d1c053f64b8c7e8d52ac292c66651bfd033f1e1b4529c686383cf7d9b"
+  },
+  {
+   "resource_id": "48d40fa4-1707-41a2-bd4a-69ad2a0db4eb",
+   "resource_name": "Registro das Infrações de Trânsito - 2006",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/48d40fa4-1707-41a2-bd4a-69ad2a0db4eb/download/registro-das-infracoes-de-transito-2006.csv",
+   "download_started_at": "2026-10-09T18:59:25+00:00",
+   "size_bytes": 1963192,
+   "checksum_sha256": "6eb7fe2f106aea8fccfd56308c715173633a3a1a605c2df0e0484e902595925e"
+  },
+  {
+   "resource_id": "91794ce3-63bd-4b4c-a126-c8df51115211",
+   "resource_name": "Registro das Infrações de Trânsito - 2007",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/91794ce3-63bd-4b4c-a126-c8df51115211/download/registro-das-infracoes-de-transito-2007.csv",
+   "download_started_at": "2026-10-09T18:59:27+00:00",
+   "size_bytes": 40290161,
+   "checksum_sha256": "a1201cb3f35335d77fc4c20ca338129b0194c57240cf1e2a43247d5ad8eedf96"
+  },
+  {
+   "resource_id": "d9da558a-14f8-4186-abb5-4e82b2f7242d",
+   "resource_name": "Registro das Infrações de Trânsito - 2008",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/d9da558a-14f8-4186-abb5-4e82b2f7242d/download/registro-das-infracoes-de-transito-2008.csv",
+   "download_started_at": "2026-10-09T18:59:31+00:00",
+   "size_bytes": 41808638,
+   "checksum_sha256": "c706e6abc2e1294381217c37532820d58a6b2bf55d5c2e3c48069cdeabd651a0"
+  },
+  {
+   "resource_id": "06ff94fa-cdc8-4f3e-8807-92fcfe8fd67c",
+   "resource_name": "Registro das Infrações de Trânsito - 2010",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/06ff94fa-cdc8-4f3e-8807-92fcfe8fd67c/download/registro-das-infracoes-de-transito-2010.csv",
+   "download_started_at": "2026-10-09T18:59:36+00:00",
+   "size_bytes": 59998394,
+   "checksum_sha256": "b64d4d2c50f68ba2ad9d35a488f9ab2c748ec1b8d05a78cc46484d24da645b2a"
+  },
+  {
+   "resource_id": "a7557569-156d-4430-9fd4-c40504c64608",
+   "resource_name": "Registro das Infrações de Trânsito - 2011",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/a7557569-156d-4430-9fd4-c40504c64608/download/registro-das-infracoes-de-transito-2011.csv",
+   "download_started_at": "2026-10-09T18:59:42+00:00",
+   "size_bytes": 61127601,
+   "checksum_sha256": "a72a2523843fb6c6fa7166216ff151300b91ef3380d58f35a91709e0d7f8b6a8"
+  },
+  {
+   "resource_id": "b218c5f1-70cf-4995-9535-77db1243cfea",
+   "resource_name": "Registro das Infrações de Trânsito - 2012",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/b218c5f1-70cf-4995-9535-77db1243cfea/download/registro-das-infracoes-de-transito-2012.csv",
+   "download_started_at": "2026-10-09T18:59:48+00:00",
+   "size_bytes": 66413469,
+   "checksum_sha256": "0bf9253c6cec6b3eb60f4c2196b1ba04fec1bec0cccf00e1eed12d53de84cf45"
+  },
+  {
+   "resource_id": "93fbf043-4d0c-4d03-85e0-e79e3ca11672",
+   "resource_name": "Registro das Infrações de Trânsito - 2013",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/93fbf043-4d0c-4d03-85e0-e79e3ca11672/download/registro-das-infracoes-de-transito-2013.csv",
+   "download_started_at": "2026-10-09T18:59:54+00:00",
+   "size_bytes": 81776098,
+   "checksum_sha256": "312b0b19b8ccec7f4818d5a34580eece9b32efce538b3d3e20c77a69e3a18a4b"
+  },
+  {
+   "resource_id": "5daac33d-b7b4-4667-93ed-96bf390ca671",
+   "resource_name": "Registro das Infrações de Trânsito - 2014",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/5daac33d-b7b4-4667-93ed-96bf390ca671/download/registro-das-infracoes-de-transito-2014.csv",
+   "download_started_at": "2026-10-09T19:00:02+00:00",
+   "size_bytes": 106710496,
+   "checksum_sha256": "9867c663041d7bab54c89ecf8f6d179b7e0bb0d22cbaf4fbbe43a23a4d97aa33"
+  },
+  {
+   "resource_id": "84d405b8-9d36-457a-8e8d-790c844a8246",
+   "resource_name": "Registro das Infrações de Trânsito - 2015",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/84d405b8-9d36-457a-8e8d-790c844a8246/download/registro-das-infracoes-de-transito-2015.csv",
+   "download_started_at": "2026-10-09T19:00:11+00:00",
+   "size_bytes": 174304236,
+   "checksum_sha256": "04aa2be72cc39c5e1ec53a7fa10feb16b20ecfad820fbd1da3a9ac24c5ece2e0"
+  },
+  {
+   "resource_id": "09a80efd-f489-451e-b9b6-53900a2a4629",
+   "resource_name": "Registro das Infrações de Trânsito - 2016",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/09a80efd-f489-451e-b9b6-53900a2a4629/download/registro-das-infracoes-de-transito-2016.csv",
+   "download_started_at": "2026-10-09T19:00:25+00:00",
+   "size_bytes": 148024793,
+   "checksum_sha256": "d2095349a72ff1f011de7fcd4621cb756c7c1b7f7e3291f68591881bb108d9a9"
+  },
+  {
+   "resource_id": "2460865c-ab1f-4bbe-b1a6-4caf3dd2e9d5",
+   "resource_name": "Registro das infrações de Trânsito - 2017",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/2460865c-ab1f-4bbe-b1a6-4caf3dd2e9d5/download/registro-das-infracoes-de-transito-2017.csv",
+   "download_started_at": "2026-10-09T19:00:38+00:00",
+   "size_bytes": 145452380,
+   "checksum_sha256": "bd8bf0af3fb8bf6aa0e71a386643b0705426b1b02e26ab593b4ed57a22c0d776"
+  },
+  {
+   "resource_id": "3fa3f7b1-a829-4733-9a41-c1650a3e02a5",
+   "resource_name": "Registro das infrações de Trânsito - 2019",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/3fa3f7b1-a829-4733-9a41-c1650a3e02a5/download/registro-das-infracoes-de-transito-2019.csv",
+   "download_started_at": "2026-10-09T19:00:54+00:00",
+   "size_bytes": 204568790,
+   "checksum_sha256": "8d13ff822e359f67e6cd3ddd0810f10545b23ce37cd20d83284e1c34bb585a16"
+  },
+  {
+   "resource_id": "6dd9f09e-f38a-482d-8a24-2b599ad25786",
+   "resource_name": "Registro das infrações de Trânsito - 2020",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/6dd9f09e-f38a-482d-8a24-2b599ad25786/download/registro-das-infracoes-de-transito-2020.csv",
+   "download_started_at": "2026-10-09T19:01:11+00:00",
+   "size_bytes": 165285102,
+   "checksum_sha256": "3d9dbeb3a243df580c7381f4cb022dae4dccd35b0b6f9336e181caafcf092533"
+  },
+  {
+   "resource_id": "6bf55076-5aaa-4bf5-9f45-5a57352ac0c8",
+   "resource_name": "Registro das infrações de Trânsito - 2021",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/6bf55076-5aaa-4bf5-9f45-5a57352ac0c8/download/registro-das-infracoes-de-transito-2021.csv",
+   "download_started_at": "2026-10-09T19:01:25+00:00",
+   "size_bytes": 147966058,
+   "checksum_sha256": "508fd8c0500dd14826d546a4f126b6ba16679c37fe4793685027b965af780835"
+  },
+  {
+   "resource_id": "896622f2-4104-4c6b-acc5-bded85fa8a26",
+   "resource_name": "Registro das infrações de Trânsito - 2022",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/896622f2-4104-4c6b-acc5-bded85fa8a26/download/registro-das-infracoes-de-transito-2022.csv",
+   "download_started_at": "2026-10-09T19:01:38+00:00",
+   "size_bytes": 147843592,
+   "checksum_sha256": "b9f4f30e947484a0a833cc8c22132eab5a646e405df1611b0d23d5bc9f0af58a"
+  },
+  {
+   "resource_id": "9eabe813-a17c-4e8f-b91d-66ba7d4c269f",
+   "resource_name": "Registro das infrações de Trânsito - 2023",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/9eabe813-a17c-4e8f-b91d-66ba7d4c269f/download/registro-das-infracoes-de-transito-2023.csv",
+   "download_started_at": "2026-10-09T19:01:52+00:00",
+   "size_bytes": 161526187,
+   "checksum_sha256": "34bb4203a0ad1722e5a6dfbbb7ea939ca5536ca055bc0b3bb6780ac4beed68b9"
+  },
+  {
+   "resource_id": "fd97260b-4a91-4c6a-ad14-7285e5f6ed9a",
+   "resource_name": "Registro das infrações de Trânsito - 2024",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/fd97260b-4a91-4c6a-ad14-7285e5f6ed9a/download/registro-das-infracoes-de-transito-2024.csv",
+   "download_started_at": "2026-10-09T19:02:04+00:00",
+   "size_bytes": 105744509,
+   "checksum_sha256": "a53743003c23fb8affbfd0ae4d0ae584fe6a485e8ac4056a738fa147a8af3120"
+  },
+  {
+   "resource_id": "16db0dcc-f871-46ee-8e0e-457072b5f940",
+   "resource_name": "Registro das infrações de Trânsito - 2025",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/16db0dcc-f871-46ee-8e0e-457072b5f940/download/registro-das-infracoes-de-transito-2025.csv",
+   "download_started_at": "2026-10-09T19:02:14+00:00",
+   "size_bytes": 40291952,
+   "checksum_sha256": "729d7fc78724a87f025db8cf4494dab793c0fbc40f9c89c056bd6842836e7171"
+  },
+  {
+   "resource_id": "d8ee485a-d1c7-4eda-9caa-e82f58afd590",
+   "resource_name": "Registro de Infrações de Transito - 2018",
+   "resource_url": "https://dados.recife.pe.gov.br:443/dataset/fbe0c549-cd14-4146-886c-38bc0859cd2f/resource/d8ee485a-d1c7-4eda-9caa-e82f58afd590/download/registro-de-infracoes-de-transito-2018.csv",
+   "download_started_at": "2026-10-09T19:02:18+00:00",
+   "size_bytes": 199606893,
+   "checksum_sha256": "793946f4865d4f00c5090d5953d463f01aecaf5d59b0506b92694e049b104e74"
+  }
+ ],
+ "aggregation": {
+  "rows_read": 8483786,
+  "rows_after_filters": 8483786,
+  "rows_invalid_date": 3,
+  "rows_excluded": 0,
+  "rows_future_date": 0,
+  "last_record_month": "2025-05",
+  "first_month": "2006-01",
+  "last_complete_month": "2025-05"
+ },
+ "source_checks": [
+  {
+   "check": "mixed_date_formats",
+   "level": "info",
+   "params": {
+    "shapes": [
+     "99/99/9999 99:99",
+     "9999-99-99",
+     "9999/99/99",
+     "9999/99/99 99:99:99.999"
+    ],
+    "files": {
+     "Registro da infrações de transito - 2009": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2006": [
+      "9999-99-99"
+     ],
+     "Registro das Infrações de Trânsito - 2007": [
+      "9999-99-99"
+     ],
+     "Registro das Infrações de Trânsito - 2008": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2010": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2011": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2012": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2013": [
+      "9999-99-99"
+     ],
+     "Registro das Infrações de Trânsito - 2014": [
+      "9999-99-99"
+     ],
+     "Registro das Infrações de Trânsito - 2015": [
+      "9999/99/99 99:99:99.999"
+     ],
+     "Registro das Infrações de Trânsito - 2016": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2017": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2019": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2020": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2021": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2022": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2023": [
+      "9999-99-99"
+     ],
+     "Registro das infrações de Trânsito - 2024": [
+      "99/99/9999 99:99"
+     ],
+     "Registro das infrações de Trânsito - 2025": [
+      "9999-99-99"
+     ],
+     "Registro de Infrações de Transito - 2018": [
+      "9999-99-99",
+      "9999/99/99"
+     ]
+    }
+   }
+  },
+  {
+   "check": "publication_lag",
+   "level": "info",
+   "params": {
+    "last_record_month": "2025-05",
+    "months_without_records": 16
+   }
+  }
+ ],
+ "analysis_period": [
+  "2006-05",
+  "2025-05"
+ ]
+}

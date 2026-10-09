@@ -1,0 +1,506 @@
+{
+ "notices:2006-06": {
+  "series": "notices",
+  "month": "2006-06",
+  "category": "DQE",
+  "consistency": 0.667,
+  "review_level": "pending",
+  "ensemble_score": 0.2793,
+  "votes": 2,
+  "near_drift": false,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.3,
+    "reasoning": "The anomaly is in June 2006 with 2 infractions, far above the median of previous 12 months (1). Seasonality check shows no historical data for this calendar month in previous years (n/a), so no seasonal pattern. No known events in +-6 months. The data shows no excluded records or no_id records, and the values are plausible (non-zero). The Page-Hinkley test found no sustained level shift. Since the deviation is small (only 2 infractions) and there's no data problem indicator, it's not a data-quality event. No policy-driven change is indicated. Thus, it's a genuine enforcement shift (GES) with low confidence due to lack of context.",
+    "seed": 11,
+    "latency_s": 47.5
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The anomalous month is June 2006 (2 notices vs median of previous 12 months of 1). Seasonality check shows no data from previous years for June (n/a), so no seasonal pattern. No events within ±6 months. Records show no excluded or no_id records, and the drop to zero for July-August is followed by a spike in November and a massive increase in December 2006, suggesting a data issue (e.g., backlog or retroactive correction) rather than a real shift. The ensemble score (0.28) is low, and no sustained level shift detected. Thus, DQE is the best category.",
+    "seed": 22,
+    "latency_s": 22.4
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The anomaly is June 2006 (2 notices) with a median of previous 12 months at 1. Seasonality check shows no historical data for June (n/a) and no years with the same deviation. No known events within 6 months. Records show no exclusions or no IDs. The following months have zero notices (July-August) then a spike in September-December 2006. This suggests a data quality issue: a possible system migration or backlog causing initial low counts followed by a correction. The data quality category DQE fits.",
+    "seed": 33,
+    "latency_s": 20.0
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2006-06 (calendar month 6).\nValue: 2; median of the previous 12 months: 1 (+100%; ratio 2.00).\nSeasonality check - ratio of calendar month 6 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (above 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: iforest, lstm_ed (2 of 4); ensemble score 0.28 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: no.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2006-05 | 1 | 0 | 0\n2006-06 | 2 | 0 | 0  <== anomaly\n2006-07 | 0 | 0 | 0\n2006-08 | 0 | 0 | 0\n2006-09 | 1 | 0 | 0\n2006-10 | 0 | 0 | 0\n2006-11 | 5 | 0 | 0\n2006-12 | 7,525 | 0 | 0\n2007-01 | 13,809 | 0 | 0\n2007-02 | 10,371 | 0 | 0\n2007-03 | 13,707 | 0 | 0\n2007-04 | 12,658 | 0 | 0\n2007-05 | 14,413 | 0 | 0\n2007-06 | 12,941 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "a6477650950ddc2f298ce7965b93359e21fe8fa49678aadd3450413f686fa935",
+  "judged_at": "2026-10-09T19:30:32+00:00"
+ },
+ "notices:2006-10": {
+  "series": "notices",
+  "month": "2006-10",
+  "category": "DQE",
+  "consistency": 0.667,
+  "review_level": "pending",
+  "ensemble_score": 0.3833,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The anomalous month (2006-10) has 0 infractions, while the median of previous 12 months is 1. Seasonality check shows no prior years have data for this month, so no seasonal pattern. No events within +-6 months. The data shows no excluded or no_id records for 2006-10, but there's a sustained level shift in the following months (2007-01 to 2007-10). The zero value is implausible for a traffic infraction series that is active otherwise, suggesting data-quality issues like a reporting failure or system migration. Since no events explain it and seasonality is absent, DQE is the best fit.",
+    "seed": 11,
+    "latency_s": 54.9
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.9,
+    "reasoning": "The anomalous month 2006-10 has 0 infractions (median previous 12 months: 1). Seasonality check shows no data from previous years for this month (n/a), so seasonal patterns cannot be confirmed. The same month was flagged in 2013-10 but no context for that year. No known events in +-6 months. Records show 0 excluded/no_id records for 2006-10, which is implausible for a month with historically 1+ infractions. A Page-Hinkley test confirms a sustained level shift, but the data quality indicators (excluded/no_id) are clean. Given the implausible zero value in an active series without events, the anomaly is likely a data-quality event (DQE).",
+    "seed": 22,
+    "latency_s": 27.4
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The anomalous month is 2006-10 with 0 infractions, significantly below the median (1). Seasonality check shows no historical data for calendar month 10 in previous years, so no seasonal pattern. No known events in +-6 months. Records show 0 excluded and 0 no_id records, no data issues. A Page-Hinkley test indicates a level shift within 2 months, but the data quality check shows no signs of data problems. Given the absence of events and seasonal patterns, and the data being clean, the anomaly is likely a genuine enforcement shift (GES).",
+    "seed": 33,
+    "latency_s": 21.6
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2006-10 (calendar month 10).\nValue: 0; median of the previous 12 months: 1 (-100%; ratio 0.00).\nSeasonality check - ratio of calendar month 10 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (below 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: 2013-10.\nDetectors that flagged it: iforest, lstm_ed (2 of 4); ensemble score 0.38 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2006-05 | 1 | 0 | 0\n2006-06 | 2 | 0 | 0\n2006-07 | 0 | 0 | 0\n2006-08 | 0 | 0 | 0\n2006-09 | 1 | 0 | 0\n2006-10 | 0 | 0 | 0  <== anomaly\n2006-11 | 5 | 0 | 0\n2006-12 | 7,525 | 0 | 0\n2007-01 | 13,809 | 0 | 0\n2007-02 | 10,371 | 0 | 0\n2007-03 | 13,707 | 0 | 0\n2007-04 | 12,658 | 0 | 0\n2007-05 | 14,413 | 0 | 0\n2007-06 | 12,941 | 0 | 0\n2007-07 | 12,202 | 0 | 0\n2007-08 | 16,565 | 0 | 0\n2007-09 | 14,948 | 0 | 0\n2007-10 | 15,582 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "a466af20cc4d288a27f164b754a0b2f1ec7f50eff0d959ebe9f8798a84999e98",
+  "judged_at": "2026-10-09T19:29:03+00:00"
+ },
+ "notices:2006-11": {
+  "series": "notices",
+  "month": "2006-11",
+  "category": "DQE",
+  "consistency": 0.667,
+  "review_level": "pending",
+  "ensemble_score": 0.4053,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The anomaly in 2006-11 is 5 infractions, with a median of previous 12 months at 0.5 (900% increase). Seasonality check shows no prior years for comparison. No other years had this month flagged. The Page-Hinkley test indicates a sustained level shift within 2 months. The monthly context shows a dramatic jump from 0 in 2006-10 to 5 in 2006-11, then a massive spike in 2006-12 (7,525) and subsequent months (13k+). This abrupt, persistent increase with no known events suggests a data-quality issue: likely a one-time system migration or backlog that caused a burst of records from prior months to be retroactively included in 2006-11. No seasonal patterns or policy events are indicated.",
+    "seed": 11,
+    "latency_s": 62.0
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The anomaly is in 2006-11 with a value of 5, significantly higher than the median of previous 12 months (0.5). Seasonality check shows no data from previous years for month 11, so no seasonal pattern. No known events in the timeframe. The data quality indicators (excluded and no_id) are zero, so no reporting failures. The Page-Hinkley test indicates a sustained level shift, but the context shows a massive jump from 0 in 2006-10 to 5 in 2006-11, followed by a huge spike in 2006-12 and beyond. This suggests a one-time data reporting issue, likely a backlog or retroactive correction, as the numbers are implausible for a new month (zero for two months before), and the sudden increase aligns with a data quality event.",
+    "seed": 22,
+    "latency_s": 32.0
+   },
+   {
+    "category": "GES",
+    "confidence": 0.9,
+    "reasoning": "The anomaly is 2006-11 with 5 notices, a median of previous 12 months of 0.5 (ratio 10.00). Seasonality check: no previous years' data for month 11, and 0 years showed deviation. No known events. Records show no excluded or no_id records, so no data quality issues. A Page-Hinkley test found a level shift, but this is consistent with a genuine enforcement shift as no other explanation fits. The large deviation (900%) is due to a true change in enforcement intensity, not data quality.",
+    "seed": 33,
+    "latency_s": 22.1
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2006-11 (calendar month 11).\nValue: 5; median of the previous 12 months: 0.5 (+900%; ratio 10.00).\nSeasonality check - ratio of calendar month 11 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (above 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: iforest, lstm_ed (2 of 4); ensemble score 0.41 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2006-05 | 1 | 0 | 0\n2006-06 | 2 | 0 | 0\n2006-07 | 0 | 0 | 0\n2006-08 | 0 | 0 | 0\n2006-09 | 1 | 0 | 0\n2006-10 | 0 | 0 | 0\n2006-11 | 5 | 0 | 0  <== anomaly\n2006-12 | 7,525 | 0 | 0\n2007-01 | 13,809 | 0 | 0\n2007-02 | 10,371 | 0 | 0\n2007-03 | 13,707 | 0 | 0\n2007-04 | 12,658 | 0 | 0\n2007-05 | 14,413 | 0 | 0\n2007-06 | 12,941 | 0 | 0\n2007-07 | 12,202 | 0 | 0\n2007-08 | 16,565 | 0 | 0\n2007-09 | 14,948 | 0 | 0\n2007-10 | 15,582 | 0 | 0\n2007-11 | 14,357 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "94bcfbb8044bf64a1dde1589b621794cd9acf5f66f03e72053390b77debbe2db",
+  "judged_at": "2026-10-09T19:27:19+00:00"
+ },
+ "notices:2007-05": {
+  "series": "notices",
+  "month": "2007-05",
+  "category": "GES",
+  "consistency": 0.667,
+  "review_level": "none",
+  "ensemble_score": 0.3076,
+  "votes": 2,
+  "near_drift": false,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.95,
+    "reasoning": "The seasonality check shows no historical data for previous years (n/a), and the same month never deviated in the same direction (0 of 0 years). The anomaly in 2007-05 is a massive increase (4118x) compared to the median of previous months. There are no excluded or no_id records, indicating no data quality issues. No known events explain the spike. The Page-Hinkley test shows no sustained level shift, ruling out recent changes. Given the extreme deviation without historical context or events, this is a genuine enforcement shift (GES) with high confidence.",
+    "seed": 11,
+    "latency_s": 60.3
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The seasonality check shows no historical data for calendar month 5 in previous years, so no seasonal pattern can be confirmed. The same month (2007-05) was not anomalous in any prior years. There's no evidence of events within 6 months. The monthly data shows no excluded or no_id records (indicating no data quality issues). The anomaly is a massive spike (4118x median) but the Page-Hinkley test confirms no sustained level shift. Since no policy events are noted and the spike isn't explained by data issues, it's likely a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 23.6
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.95,
+    "reasoning": "The seasonality check shows no historical pattern for May (ratio of 4118.00 vs median previous 12 months 4), and the same month wasn't anomalous in previous years. Data quality events: no excluded or no_id records (all 0), no system migration signs. The anomaly is a massive spike (411700% increase) with no plausible event explanation. A Page-Hinkley test rules out sustained shifts. The only plausible category is DQE (data-quality event) as the spike lacks external explanation but fits reporting errors (e.g., backlog, retroactive correction).",
+    "seed": 33,
+    "latency_s": 24.2
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2007-05 (calendar month 5).\nValue: 14,413; median of the previous 12 months: 4 (+411700%; ratio 4118.00).\nSeasonality check - ratio of calendar month 5 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (above 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: 2020-05.\nDetectors that flagged it: mad, iforest (2 of 4); ensemble score 0.31 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: no.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2006-05 | 1 | 0 | 0\n2006-06 | 2 | 0 | 0\n2006-07 | 0 | 0 | 0\n2006-08 | 0 | 0 | 0\n2006-09 | 1 | 0 | 0\n2006-10 | 0 | 0 | 0\n2006-11 | 5 | 0 | 0\n2006-12 | 7,525 | 0 | 0\n2007-01 | 13,809 | 0 | 0\n2007-02 | 10,371 | 0 | 0\n2007-03 | 13,707 | 0 | 0\n2007-04 | 12,658 | 0 | 0\n2007-05 | 14,413 | 0 | 0  <== anomaly\n2007-06 | 12,941 | 0 | 0\n2007-07 | 12,202 | 0 | 0\n2007-08 | 16,565 | 0 | 0\n2007-09 | 14,948 | 0 | 0\n2007-10 | 15,582 | 0 | 0\n2007-11 | 14,357 | 0 | 0\n2007-12 | 5,495 | 0 | 0\n2008-01 | 15,010 | 0 | 0\n2008-02 | 15,065 | 0 | 0\n2008-03 | 13,753 | 0 | 0\n2008-04 | 12,705 | 0 | 0\n2008-05 | 13,847 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "2ec5ed0ec55e874619acbad221215c64905c229f5b0bb0fb14bb89fe3fe51e6c",
+  "judged_at": "2026-10-09T19:25:22+00:00"
+ },
+ "notices:2007-12": {
+  "series": "notices",
+  "month": "2007-12",
+  "category": "GES",
+  "consistency": 1.0,
+  "review_level": "none",
+  "ensemble_score": 0.5775,
+  "votes": 3,
+  "near_drift": false,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.95,
+    "reasoning": "The anomaly is December 2007 with 5,495 infractions (40% of median previous 12 months). Seasonality check shows no historical pattern for December (n/a), and it was not anomalous in previous years. The known event in June 2008 (Lei Seca) is too late to explain December 2007. Records show no exclusions or missing IDs, ruling out DQE. No other series flagged in same month. The drop is sudden but no policy change occurred earlier. This is a genuine shift (GES) with high confidence as no other factors explain it.",
+    "seed": 11,
+    "latency_s": 66.8
+   },
+   {
+    "category": "GES",
+    "confidence": 0.9,
+    "reasoning": "The anomalous month is 2007-12 with 5,495 infractions, significantly below the median of previous 12 months (13,758). Seasonality check shows no historical pattern for December (n/a), and it wasn't flagged in other years. The Page-Hinkley test rules out a sustained level shift. No data quality issues (excluded=0, no_id=0) and no known events in December 2007. The only event in 2008 (June) is unrelated. Since the anomaly is large but not explained by seasonality, events, or data quality, it's a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 28.4
+   },
+   {
+    "category": "GES",
+    "confidence": 0.9,
+    "reasoning": "The anomalous month is 2007-12 with 5,495 infractions, far below the median of previous 12 months (13,758). Seasonality check shows no historical pattern for December (n/a) and it didn't deviate in any prior years. The same month was flagged in 2017-12 and 2022-12, but seasonality check indicates no recurring pattern. Known event in 2008-06 (Lei Seca) is too recent to affect 2007-12. Data quality checks show no excluded or no_id records (0 in all months), so no reporting failure. The anomaly is a genuine shift (GES) since no policy event or seasonal pattern explains it, and data quality doesn't fit.",
+    "seed": 33,
+    "latency_s": 33.8
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2007-12 (calendar month 12).\nValue: 5,495; median of the previous 12 months: 13,758 (-60%; ratio 0.40).\nSeasonality check - ratio of calendar month 12 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (below 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: 2017-12, 2022-12.\nDetectors that flagged it: zscore, mad, iforest (3 of 4); ensemble score 0.58 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: no.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2006-12 | 7,525 | 0 | 0\n2007-01 | 13,809 | 0 | 0\n2007-02 | 10,371 | 0 | 0\n2007-03 | 13,707 | 0 | 0\n2007-04 | 12,658 | 0 | 0\n2007-05 | 14,413 | 0 | 0\n2007-06 | 12,941 | 0 | 0\n2007-07 | 12,202 | 0 | 0\n2007-08 | 16,565 | 0 | 0\n2007-09 | 14,948 | 0 | 0\n2007-10 | 15,582 | 0 | 0\n2007-11 | 14,357 | 0 | 0\n2007-12 | 5,495 | 0 | 0  <== anomaly\n2008-01 | 15,010 | 0 | 0\n2008-02 | 15,065 | 0 | 0\n2008-03 | 13,753 | 0 | 0\n2008-04 | 12,705 | 0 | 0\n2008-05 | 13,847 | 0 | 0\n2008-06 | 11,345 | 0 | 0\n2008-07 | 13,068 | 0 | 0\n2008-08 | 13,154 | 0 | 0\n2008-09 | 10,873 | 0 | 0\n2008-10 | 13,835 | 0 | 0\n2008-11 | 13,197 | 0 | 0\n2008-12 | 15,084 | 0 | 0\n\nKnown events within +-6 months:\n- 2008-06 (+6 months, policy): Lei Seca: zero tolerance for alcohol at the wheel, with heavier penalties",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "eacae7907b9ab995dd3a0e4cb709b58f46bdf28ea58ce07043695a1b568049e5",
+  "judged_at": "2026-10-09T19:23:34+00:00"
+ },
+ "notices:2011-07": {
+  "series": "notices",
+  "month": "2011-07",
+  "category": "GES",
+  "consistency": 1.0,
+  "review_level": "none",
+  "ensemble_score": 0.4106,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.9,
+    "reasoning": "The seasonality check shows that 2011-07 deviates below the median (0.59) while previous years (2007-2010) have ratios above 1.0 (all >0.93). Only one of four years had a similar downward deviation. The month was not flagged in other years. The Page-Hinkley test confirms a sustained level shift within 2 months, suggesting a structural change. No events are known. Records show no exclusions or missing IDs, ruling out data issues. Thus, the anomaly is likely a genuine enforcement shift (GES).",
+    "seed": 11,
+    "latency_s": 64.3
+   },
+   {
+    "category": "GES",
+    "confidence": 0.9,
+    "reasoning": "The anomalous month is 2011-07 with 12,739 infractions, below the median of previous 12 months (21,622; -41%). Seasonality check shows prior years' July ratios: 2010-07:1.36, 2009-07:1.25, 2008-07:0.93, 2007-07:1.36. Only one of four years showed a below-1 deviation (2008), so not strongly seasonal. No known events. Records show 0 excluded or no_id, no data-quality signs like bursts. Page-Hinkley test confirms a sustained level shift within 2 months. Since no event explains timing, and no data issues, this is a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 33.0
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The anomalous month is 2011-07 with 12,739 infractions. Seasonality check shows previous years (2007-2010) have ratios >0.93 but only one year (2008) had a ratio <1. The same month was not flagged in other years. Data quality checks: no excluded records or no_id entries, and the series shows no data issues (excluded/no_id = 0). The Page-Hinkley test confirms a sustained level shift, but no events (policy changes) in +-6 months. The anomaly is not seasonal (only one year with low ratio) or policy-driven (no events). Thus, the data-quality event is unlikely due to no indicators. The anomaly is likely a genuine enforcement shift (GES) since it's a real change not explained by other factors.",
+    "seed": 33,
+    "latency_s": 32.0
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2011-07 (calendar month 7).\nValue: 12,739; median of the previous 12 months: 21,622 (-41%; ratio 0.59).\nSeasonality check - ratio of calendar month 7 to the median of its previous 12 months, in the previous years: 2010-07: 1.36 | 2009-07: 1.25 | 2008-07: 0.93 | 2007-07: 1.36.\nThe same calendar month deviated in the same direction (below 1) in 1 of these 4 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.41 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2010-07 | 22,883 | 0 | 0\n2010-08 | 26,262 | 0 | 0\n2010-09 | 24,139 | 0 | 0\n2010-10 | 22,214 | 0 | 0\n2010-11 | 21,809 | 0 | 0\n2010-12 | 21,434 | 0 | 0\n2011-01 | 18,549 | 0 | 0\n2011-02 | 18,126 | 0 | 0\n2011-03 | 18,703 | 0 | 0\n2011-04 | 19,366 | 0 | 0\n2011-05 | 22,659 | 0 | 0\n2011-06 | 18,770 | 0 | 0\n2011-07 | 12,739 | 0 | 0  <== anomaly\n2011-08 | 19,058 | 0 | 0\n2011-09 | 19,491 | 0 | 0\n2011-10 | 18,805 | 0 | 0\n2011-11 | 18,938 | 0 | 0\n2011-12 | 23,529 | 0 | 0\n2012-01 | 23,947 | 0 | 0\n2012-02 | 19,145 | 0 | 0\n2012-03 | 20,121 | 0 | 0\n2012-04 | 18,055 | 0 | 0\n2012-05 | 17,352 | 0 | 0\n2012-06 | 21,186 | 0 | 0\n2012-07 | 24,146 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "cf737fc6be9d793c1c91949a8680ae1b4dbb639d13afe6efb71a207a546bc118",
+  "judged_at": "2026-10-09T19:21:25+00:00"
+ },
+ "notices:2013-09": {
+  "series": "notices",
+  "month": "2013-09",
+  "category": "GES",
+  "consistency": 0.667,
+  "review_level": "none",
+  "ensemble_score": 0.3745,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The anomaly in 2013-09 is a 39,168 infractions (1.96x median of previous 12 months). Seasonality check: 2012-09:1.00, 2011-09:1.01, 2010-09:1.39, 2009-09:1.35, 2008-09:0.79, 2007-09:1.20. The same month deviated above 1 in 5 of 6 years. Since the same calendar month was flagged as anomalous in no other year, it's not seasonal (SP). No known events within +-6 months. Records show 0 excluded or no_id records, no data quality signs (DQE). Page-Hinkley test confirms a sustained level shift within 2 months, but no event explains it. Thus, it's a genuine enforcement shift (GES).",
+    "seed": 11,
+    "latency_s": 82.3
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The anomaly is in 2013-09. Seasonality check shows the same calendar month (Sept) has consistently been above median in 5/6 years (2007-2012), but the median ratio is 1.96 this year (vs. 1.00-1.39 in prior years). However, the same month was not flagged anomalous in other years, which contradicts seasonal pattern (SP). No events in +-6 months. Records show no exclusions or no_id (0 in all months), so no data-quality issues (DQE). The Page-Hinkley test confirms a sustained level shift, but this is not explained by prior categories. No policy changes noted (PDC). Thus, it's a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 30.6
+   },
+   {
+    "category": "SP",
+    "confidence": 0.95,
+    "reasoning": "The anomaly is September 2013 (39,168 infractions). Seasonality check shows a consistent upward trend in September ratios (2008-2013): 0.79, 1.20, 1.35, 1.39, 1.01, 1.00. The same month was above median in 5 of 6 years. This suggests seasonal pattern (SP) since deviations are recurring. No events in +-6 months. Records show no exclusions or missing IDs (excluded=0, no_id=0), so not DQE. The Page-Hinkley test confirms a sustained shift but doesn't override seasonality evidence.",
+    "seed": 33,
+    "latency_s": 27.6
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2013-09 (calendar month 9).\nValue: 39,168; median of the previous 12 months: 19,992 (+96%; ratio 1.96).\nSeasonality check - ratio of calendar month 9 to the median of its previous 12 months, in the previous years: 2012-09: 1.00 | 2011-09: 1.01 | 2010-09: 1.39 | 2009-09: 1.35 | 2008-09: 0.79 | 2007-09: 1.20.\nThe same calendar month deviated in the same direction (above 1) in 5 of these 6 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.37 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2012-09 | 19,791 | 0 | 0\n2012-10 | 22,628 | 0 | 0\n2012-11 | 18,741 | 0 | 0\n2012-12 | 13,505 | 0 | 0\n2013-01 | 26,239 | 0 | 0\n2013-02 | 23,580 | 0 | 0\n2013-03 | 24,231 | 0 | 0\n2013-04 | 19,776 | 0 | 0\n2013-05 | 20,193 | 0 | 0\n2013-06 | 15,725 | 0 | 0\n2013-07 | 17,523 | 0 | 0\n2013-08 | 23,377 | 0 | 0\n2013-09 | 39,168 | 0 | 0  <== anomaly\n2013-10 | 48,993 | 0 | 0\n2013-11 | 35,491 | 0 | 0\n2013-12 | 37,926 | 0 | 0\n2014-01 | 36,477 | 0 | 0\n2014-02 | 34,521 | 0 | 0\n2014-03 | 32,471 | 0 | 0\n2014-04 | 31,759 | 0 | 0\n2014-05 | 28,006 | 0 | 0\n2014-06 | 24,654 | 0 | 0\n2014-07 | 33,851 | 0 | 0\n2014-08 | 40,200 | 0 | 0\n2014-09 | 49,658 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "bac1350eb9b450ad64b0b163310b1780cbf4e4a32147c1e9d703e58f949d653e",
+  "judged_at": "2026-10-09T19:19:16+00:00"
+ },
+ "notices:2013-10": {
+  "series": "notices",
+  "month": "2013-10",
+  "category": "SP",
+  "consistency": 0.667,
+  "review_level": "none",
+  "ensemble_score": 0.4125,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "SP",
+    "confidence": 0.95,
+    "reasoning": "Seasonality check shows the same month (2013-10) has consistently deviated above median in 5 of 6 years (2007-2012). The median of previous 12 months (2012-10) is 21,410, while 2013-10 is 48,993 (2.29x higher). Previous years' ratios (2012-10:1.13, 2011-10:0.98, 2010-10:1.28, etc.) all deviated above 1 in 5/6 years. The same month was flagged as anomalous in 2006-10, reinforcing seasonal pattern. No events in +-6 months, and no data-quality signs (excluded/no_id records are 0). Page-Hinkley test confirms sustained level shift but this is a consequence of the seasonal pattern, not a data issue.",
+    "seed": 11,
+    "latency_s": 82.8
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows 2013-10 has ratio 2.29 vs median of prior 12 months, while previous years' 2010-10 to 2012-10 ratios were 1.03-1.31 (mostly below 1.2). The same calendar month deviated above median in 5 of 6 prior years. This suggests strong seasonal pattern. However, the Page-Hinkley test confirms a sustained level shift within 2 months (2013-09 to 2013-10), which contradicts pure seasonality. No known policy events in +-6 months. Data quality shows no excluded records or missing IDs, so not DQE. The anomaly is large but explained by the level shift, not pure seasonality. Thus, the anomaly is likely a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 33.7
+   },
+   {
+    "category": "SP",
+    "confidence": 0.95,
+    "reasoning": "Seasonality check: The ratio for October (2013) is 2.29 (vs median 21,410). Previous years show October ratios above 1 (2012-10:1.13, 2011-10:0.98, 2010-10:1.28, 2009-10:1.31, 2008-10:1.03, 2007-10:1.22). The same month deviated above median in 5 of 6 years. Also flagged in 2006-10. This indicates a recurring seasonal pattern (SP) rather than a one-time event. The Page-Hinkley test confirms a level shift but this is consistent with seasonal variation. No data quality issues (excluded/no_id = 0).",
+    "seed": 33,
+    "latency_s": 35.7
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2013-10 (calendar month 10).\nValue: 48,993; median of the previous 12 months: 21,410 (+129%; ratio 2.29).\nSeasonality check - ratio of calendar month 10 to the median of its previous 12 months, in the previous years: 2012-10: 1.13 | 2011-10: 0.98 | 2010-10: 1.28 | 2009-10: 1.31 | 2008-10: 1.03 | 2007-10: 1.22.\nThe same calendar month deviated in the same direction (above 1) in 5 of these 6 years.\nThe same calendar month was also flagged as anomalous in: 2006-10.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.41 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2012-10 | 22,628 | 0 | 0\n2012-11 | 18,741 | 0 | 0\n2012-12 | 13,505 | 0 | 0\n2013-01 | 26,239 | 0 | 0\n2013-02 | 23,580 | 0 | 0\n2013-03 | 24,231 | 0 | 0\n2013-04 | 19,776 | 0 | 0\n2013-05 | 20,193 | 0 | 0\n2013-06 | 15,725 | 0 | 0\n2013-07 | 17,523 | 0 | 0\n2013-08 | 23,377 | 0 | 0\n2013-09 | 39,168 | 0 | 0\n2013-10 | 48,993 | 0 | 0  <== anomaly\n2013-11 | 35,491 | 0 | 0\n2013-12 | 37,926 | 0 | 0\n2014-01 | 36,477 | 0 | 0\n2014-02 | 34,521 | 0 | 0\n2014-03 | 32,471 | 0 | 0\n2014-04 | 31,759 | 0 | 0\n2014-05 | 28,006 | 0 | 0\n2014-06 | 24,654 | 0 | 0\n2014-07 | 33,851 | 0 | 0\n2014-08 | 40,200 | 0 | 0\n2014-09 | 49,658 | 0 | 0\n2014-10 | 46,445 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "a1045119ddde930e4a5608f4f99dadd69404e0aa10af14f29d056d8c1ebcdcc8",
+  "judged_at": "2026-10-09T19:16:56+00:00"
+ },
+ "notices:2017-12": {
+  "series": "notices",
+  "month": "2017-12",
+  "category": "GES",
+  "consistency": 0.667,
+  "review_level": "none",
+  "ensemble_score": 0.3697,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows that December deviated above the median in 6 of 10 years (2011-2017), with a consistent upward trend in the ratio. However, the 2017-12 value is unusually high (72,403 vs median 49,016). The Page-Hinkley test indicates a sustained level shift within 2 months, suggesting a structural change. No events were listed in the timeframe. Data quality checks show no excluded or no_id records, so it's not a data issue. The anomaly is not explained by seasonality (as December is not consistently high in other years) or policy events. The large deviation with a persistent shift points to a genuine enforcement shift (GES).",
+    "seed": 11,
+    "latency_s": 79.7
+   },
+   {
+    "category": "SP",
+    "confidence": 0.95,
+    "reasoning": "Seasonality check shows 2017-12 has ratio 1.48 vs median 49,016. Previous years' 201X-12 ratios: 0.87 (2016), 1.29 (2015), 0.67 (2014), 1.62 (2013), 0.65 (2012), 1.25 (2011), 1.23 (2010), 1.00 (2009), 1.14 (2008), 0.40 (2007). Six out of ten years show deviation above 1 (2011-2017). Same month also flagged in 2007-12 and 2022-12. Seasonality rule: recurring pattern in same direction. Here, 2017-12 deviates above median in 6/10 years with similar direction. No known events within 6 months. Data quality: excluded and no_id records are 0 for all months. Page-Hinkley test confirms level shift, but no data issues detected (no bursts or implausible values). Since seasonality matches, the anomaly is seasonal.",
+    "seed": 22,
+    "latency_s": 51.5
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check: The ratio for Dec in previous years (2016-2007) shows varied trends but the same calendar month deviated above 1 in 6 of 10 years (2011-2017). This indicates recurring patterns but not consistent. The anomaly was also flagged in 2007-12 and 2022-12, suggesting possible seasonal patterns. However, the Page-Hinkley test found a sustained level shift within 2 months (2017-12 to 2018-01), indicating a structural change. No known events in +-6 months. Data quality checks: no excluded or no_id records, so DQE is unlikely. The value (72,403) is high but consistent with the series' trend. Since the anomaly persists beyond a single month and no policy events are known, it's likely a genuine enforcement shift (GES).",
+    "seed": 33,
+    "latency_s": 37.3
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2017-12 (calendar month 12).\nValue: 72,403; median of the previous 12 months: 49,016 (+48%; ratio 1.48).\nSeasonality check - ratio of calendar month 12 to the median of its previous 12 months, in the previous years: 2016-12: 0.87 | 2015-12: 1.29 | 2014-12: 0.67 | 2013-12: 1.62 | 2012-12: 0.65 | 2011-12: 1.25 | 2010-12: 1.23 | 2009-12: 1.00 | 2008-12: 1.14 | 2007-12: 0.40.\nThe same calendar month deviated in the same direction (above 1) in 6 of these 10 years.\nThe same calendar month was also flagged as anomalous in: 2007-12, 2022-12.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.37 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2016-12 | 44,550 | 0 | 0\n2017-01 | 46,826 | 0 | 0\n2017-02 | 40,043 | 0 | 0\n2017-03 | 40,043 | 0 | 0\n2017-04 | 45,875 | 0 | 0\n2017-05 | 48,605 | 0 | 0\n2017-06 | 49,607 | 0 | 0\n2017-07 | 53,439 | 0 | 0\n2017-08 | 56,822 | 0 | 0\n2017-09 | 55,873 | 0 | 0\n2017-10 | 52,892 | 0 | 0\n2017-11 | 49,426 | 0 | 0\n2017-12 | 72,403 | 0 | 0  <== anomaly\n2018-01 | 65,869 | 0 | 0\n2018-02 | 68,925 | 0 | 0\n2018-03 | 62,221 | 0 | 0\n2018-04 | 59,192 | 0 | 0\n2018-05 | 36,347 | 0 | 0\n2018-06 | 54,384 | 0 | 0\n2018-07 | 68,852 | 0 | 0\n2018-08 | 78,610 | 0 | 0\n2018-09 | 85,470 | 0 | 0\n2018-10 | 85,135 | 0 | 0\n2018-11 | 79,093 | 0 | 0\n2018-12 | 83,442 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "348dc6cd38660e522f77afb96843a074a7eaee7d5d9c809bf0f9be12c1e49b4b",
+  "judged_at": "2026-10-09T19:14:23+00:00"
+ },
+ "notices:2020-04": {
+  "series": "notices",
+  "month": "2020-04",
+  "category": "SP",
+  "consistency": 0.333,
+  "review_level": "advisory",
+  "ensemble_score": 0.64,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "DQE",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows that calendar month 4 deviated below 1 in 7 of 10 years, but the same month was not flagged as anomalous in other years. The ratio in 2020-04 (0.40) is significantly lower than previous years' ratios (0.86-1.41). The Page-Hinkley test confirms a sustained level shift within 2 months, indicating a structural change. The data quality indicators (excluded=0, no_id=0) suggest no reporting issues. Known events (COVID-19) occurred but the anomaly is a sharp drop, not a gradual shift. The large deviation is not explained by seasonality or events, so it's likely a data-quality event (e.g., system migration) causing a temporary drop in reporting. The absence of retroactive corrections or duplicates in the data points to DQE.",
+    "seed": 11,
+    "latency_s": 81.3
+   },
+   {
+    "category": "SP",
+    "confidence": 0.95,
+    "reasoning": "Seasonality check shows 7/10 years had ratio <1 for April (below median). This pattern confirms seasonal deviation (step 1). No events plausibly explain April's drop (only COVID-19 in March, but pandemic effects typically impact later months). Data quality checks show no excluded/no_id records (step 3). The Page-Hinkley test indicates a sustained shift but no data problems. Thus, the anomaly is seasonal (SP).",
+    "seed": 22,
+    "latency_s": 19.5
+   },
+   {
+    "category": "GES",
+    "confidence": 0.75,
+    "reasoning": "Seasonality check: 7/10 years show below-1 ratio for April, indicating a consistent downward trend but not a seasonal pattern (SP). Events: Only known event is COVID-19 declared in March 2020, but the anomaly occurred in April with a sudden drop from March's 66,443 to 27,075. Data-quality: No excluded or no_id records in the dataset (all zeros), but a Page-Hinkley test shows a sustained level shift within 2 months (April-May). The large drop is not explained by seasonality or events, suggesting data-quality issues like a system migration or backlog. However, the absence of excluded/no_id records makes DQE less likely. The most plausible explanation is a genuine enforcement shift (GES) due to pandemic-related behavioral changes (e.g., reduced traffic), but the data shows no anomalies in other months. Given the context, GES best explains the drop as pandemic restrictions reduced traffic.",
+    "seed": 33,
+    "latency_s": 41.5
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2020-04 (calendar month 4).\nValue: 27,075; median of the previous 12 months: 67,777 (-60%; ratio 0.40).\nSeasonality check - ratio of calendar month 4 to the median of its previous 12 months, in the previous years: 2019-04: 0.86 | 2018-04: 1.08 | 2017-04: 0.94 | 2016-04: 1.13 | 2015-04: 1.41 | 2014-04: 0.95 | 2013-04: 0.90 | 2012-04: 0.94 | 2011-04: 0.96 | 2010-04: 0.87.\nThe same calendar month deviated in the same direction (below 1) in 7 of these 10 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.64 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2019-04 | 62,518 | 0 | 0\n2019-05 | 64,588 | 0 | 0\n2019-06 | 61,645 | 0 | 0\n2019-07 | 67,404 | 0 | 0\n2019-08 | 68,150 | 0 | 0\n2019-09 | 65,257 | 0 | 0\n2019-10 | 82,889 | 0 | 0\n2019-11 | 93,124 | 0 | 0\n2019-12 | 92,030 | 0 | 0\n2020-01 | 92,370 | 0 | 0\n2020-02 | 75,592 | 0 | 0\n2020-03 | 66,443 | 0 | 0\n2020-04 | 27,075 | 0 | 0  <== anomaly\n2020-05 | 21,127 | 0 | 0\n2020-06 | 46,238 | 0 | 0\n2020-07 | 67,226 | 0 | 0\n2020-08 | 67,663 | 0 | 0\n2020-09 | 64,345 | 0 | 0\n2020-10 | 61,208 | 0 | 0\n2020-11 | 60,658 | 0 | 0\n2020-12 | 56,175 | 0 | 0\n2021-01 | 52,103 | 0 | 0\n2021-02 | 55,801 | 0 | 0\n2021-03 | 48,937 | 0 | 0\n2021-04 | 53,432 | 0 | 0\n\nKnown events within +-6 months:\n- 2020-03 (-1 months, external): COVID-19 pandemic declared; public-health emergency measures in Brazil",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "3427b8e6a487ea6d84137022d9e4ea880f95fd666468759766f63da26fd52971",
+  "judged_at": "2026-10-09T19:11:35+00:00"
+ },
+ "notices:2020-05": {
+  "series": "notices",
+  "month": "2020-05",
+  "category": "PDC",
+  "consistency": 0.667,
+  "review_level": "none",
+  "ensemble_score": 0.5394,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "PDC",
+    "confidence": 0.9,
+    "reasoning": "Seasonality check shows 2020-05 is below median (0.31 ratio) and 6 of 10 prior years had similar downward trends. However, the median of previous 12 months (67,777) is much higher than 2020-05 value (21,127), indicating a sharp drop. The Page-Hinkley test confirms a sustained level shift within 2 months, but no data quality issues (excluded/no_id records = 0). Known event: COVID-19 pandemic (2020-03) likely caused the drop, but this is a policy-driven change (PDC) as it's a public health emergency affecting enforcement. Seasonality doesn't explain the magnitude of drop. No data quality issues observed (no bursts or implausible values).",
+    "seed": 11,
+    "latency_s": 80.7
+   },
+   {
+    "category": "PDC",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows 6/10 years had lower values for May (ratio <1), indicating consistent downward trend. However, May 2020 was flagged as anomalous with a 69% drop from median (21,127 vs 67,777). The Page-Hinkley test confirms a sustained level shift within 2 months. Known events: pandemic declaration in March 2020 (2 months prior) likely caused the drop. Seasonality is ruled out as May 2020 deviates in opposite direction to historical patterns (2019-05 was 64,588 vs 2020-05's 21,127, a 69% drop vs historical median of 67,777). Events (pandemic) explain the timing and direction. Data quality issues (excluded/no_id) are zero in this dataset. Thus, the anomaly is policy-driven due to pandemic measures.",
+    "seed": 22,
+    "latency_s": 38.0
+   },
+   {
+    "category": "SP",
+    "confidence": 0.9,
+    "reasoning": "Seasonality check: The ratio for 2020-05 (0.31) is below the median of previous 12 months (67,777). Historically, 6 of 10 years (2013-2019) showed similar downward deviations for May (ratios <1). This indicates a recurring seasonal pattern, not an anomaly. The Page-Hinkley test confirms a level shift, but the consistent downward trend in May across multiple years points to seasonality. No other events (e.g., policy changes) are plausible within the timeframe. Data quality checks show no excluded or no_id records, ruling out DQE. Thus, the anomaly is seasonal.",
+    "seed": 33,
+    "latency_s": 27.4
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2020-05 (calendar month 5).\nValue: 21,127; median of the previous 12 months: 67,777 (-69%; ratio 0.31).\nSeasonality check - ratio of calendar month 5 to the median of its previous 12 months, in the previous years: 2019-05: 0.89 | 2018-05: 0.65 | 2017-05: 1.02 | 2016-05: 1.15 | 2015-05: 1.10 | 2014-05: 0.84 | 2013-05: 0.92 | 2012-05: 0.91 | 2011-05: 1.11 | 2010-05: 0.98.\nThe same calendar month deviated in the same direction (below 1) in 6 of these 10 years.\nThe same calendar month was also flagged as anomalous in: 2007-05.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.54 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2019-05 | 64,588 | 0 | 0\n2019-06 | 61,645 | 0 | 0\n2019-07 | 67,404 | 0 | 0\n2019-08 | 68,150 | 0 | 0\n2019-09 | 65,257 | 0 | 0\n2019-10 | 82,889 | 0 | 0\n2019-11 | 93,124 | 0 | 0\n2019-12 | 92,030 | 0 | 0\n2020-01 | 92,370 | 0 | 0\n2020-02 | 75,592 | 0 | 0\n2020-03 | 66,443 | 0 | 0\n2020-04 | 27,075 | 0 | 0\n2020-05 | 21,127 | 0 | 0  <== anomaly\n2020-06 | 46,238 | 0 | 0\n2020-07 | 67,226 | 0 | 0\n2020-08 | 67,663 | 0 | 0\n2020-09 | 64,345 | 0 | 0\n2020-10 | 61,208 | 0 | 0\n2020-11 | 60,658 | 0 | 0\n2020-12 | 56,175 | 0 | 0\n2021-01 | 52,103 | 0 | 0\n2021-02 | 55,801 | 0 | 0\n2021-03 | 48,937 | 0 | 0\n2021-04 | 53,432 | 0 | 0\n2021-05 | 50,184 | 0 | 0\n\nKnown events within +-6 months:\n- 2020-03 (-2 months, external): COVID-19 pandemic declared; public-health emergency measures in Brazil",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "681ccbeb0fb886380a960793c9a49a694e6776e2545183e279cf24143f501751",
+  "judged_at": "2026-10-09T19:09:13+00:00"
+ },
+ "notices:2022-12": {
+  "series": "notices",
+  "month": "2022-12",
+  "category": "DQE",
+  "consistency": 0.667,
+  "review_level": "pending",
+  "ensemble_score": 0.5546,
+  "votes": 2,
+  "near_drift": true,
+  "runs": [
+   {
+    "category": "DQE",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows consistent downward trend in Dec since 2012 (all ratios <1). 5/10 years had similar deviation direction. Also flagged in 2007-12, 2017-12. However, Page-Hinkley test confirms sustained level shift (not just seasonal). No events in +-6 months. Records show no exclusions or no_id issues. The anomaly is a true drop (37k vs median 50k) with no obvious event explanation, but data quality is clean (0 exclusions). This fits DQE as the only plausible explanation for the persistent drop without events, given the clean data.",
+    "seed": 11,
+    "latency_s": 102.0
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check shows 2022-12 was below median (0.76 ratio). Previous years' 2012-2021-12 ratios: 0.65, 0.67, 0.86, 0.87, 0.93, 1.21, 1.29, 1.36, 1.48, 1.62 (all below 1 except 2019-2021). The same calendar month deviated below in 5 of 10 years, and was flagged in 2007-12 and 2017-12. However, the PDC check shows no known events in +-6 months. Records show no excluded or no_id records (0 in all months). A Page-Hinkley test confirms a sustained level shift within 2 months, but no event explains it. The anomaly is not due to seasonality (same month deviated below in past years but with varying direction), and data quality is ruled out (no excluded/no_id records). Thus, it's a genuine enforcement shift (GES).",
+    "seed": 22,
+    "latency_s": 44.6
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.85,
+    "reasoning": "Seasonality check: 2012-2022 show 12-month ratios below 1 in 5/10 years (2014, 2016, 2020, 2021, 2022), but the 2022-12 deviation is unusually low (0.76) compared to historical 0.86-1.36. Previous years with similar low ratios (2014, 2016, 2020, 2021) had no anomalous months in 2022-12. No known events (2021-2023) explain the drop. Data quality: no excluded/no_id records, but a Page-Hinkley test shows a sustained level shift (indicating possible data issue). The anomaly persists with no event to explain it.",
+    "seed": 33,
+    "latency_s": 35.8
+   }
+  ],
+  "prompt": "Series: notices - Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment.\nAnomalous month: 2022-12 (calendar month 12).\nValue: 37,958; median of the previous 12 months: 50,262 (-24%; ratio 0.76).\nSeasonality check - ratio of calendar month 12 to the median of its previous 12 months, in the previous years: 2021-12: 0.93 | 2020-12: 0.86 | 2019-12: 1.36 | 2018-12: 1.21 | 2017-12: 1.48 | 2016-12: 0.87 | 2015-12: 1.29 | 2014-12: 0.67 | 2013-12: 1.62 | 2012-12: 0.65.\nThe same calendar month deviated in the same direction (below 1) in 5 of these 10 years.\nThe same calendar month was also flagged as anomalous in: 2007-12, 2017-12.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.55 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: yes.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2021-12 | 46,893 | 0 | 0\n2022-01 | 50,343 | 0 | 0\n2022-02 | 48,528 | 0 | 0\n2022-03 | 50,182 | 0 | 0\n2022-04 | 53,773 | 0 | 0\n2022-05 | 51,135 | 0 | 0\n2022-06 | 50,036 | 0 | 0\n2022-07 | 55,185 | 0 | 0\n2022-08 | 46,580 | 0 | 0\n2022-09 | 48,993 | 0 | 0\n2022-10 | 53,667 | 0 | 0\n2022-11 | 50,815 | 0 | 0\n2022-12 | 37,958 | 0 | 0  <== anomaly\n2023-01 | 56,669 | 0 | 0\n2023-02 | 43,200 | 0 | 0\n2023-03 | 49,150 | 0 | 0\n2023-04 | 44,386 | 0 | 0\n2023-05 | 46,262 | 0 | 0\n2023-06 | 37,677 | 0 | 0\n2023-07 | 34,474 | 0 | 0\n2023-08 | 36,968 | 0 | 0\n2023-09 | 38,899 | 0 | 0\n2023-10 | 37,505 | 0 | 0\n2023-11 | 34,523 | 0 | 0\n2023-12 | 29,015 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "5a01035f19248f1b87fbb5bb2ae6b53fcefdf1dcddb1fe13a2b408f4063726c0",
+  "judged_at": "2026-10-09T19:06:47+00:00"
+ }
+}

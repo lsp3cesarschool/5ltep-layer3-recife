@@ -3,7 +3,11 @@
   {
    "id": "recife-autos-infracao-ambiental",
    "title": "Environmental infraction notices of the city of Recife, Brazil"
+  },
+  {
+   "id": "recife-infracoes-transito",
+   "title": "Traffic infraction notices of the city of Recife (CTTU), Brazil"
   }
  ],
- "default": "recife-autos-infracao-ambiental"
+ "default": "recife-infracoes-transito"
 }

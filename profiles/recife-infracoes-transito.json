@@ -1,0 +1,43 @@
+{
+  "id": "recife-infracoes-transito",
+  "title": "Traffic infraction notices of the city of Recife (CTTU), Brazil",
+  "country": "Brazil",
+  "scheduled": true,
+  "source": {
+    "portal_url": "https://dados.recife.pe.gov.br",
+    "dataset_id": "registro-das-infracoes-de-transito",
+    "resource_pattern": "registro d[ae]s? infra[çc][õo]es de tr[âa]nsito - \\d{4}",
+    "resource_format": "CSV",
+    "license_note": "ODbL (Dados Recife, the open data portal of the city of Recife)"
+  },
+  "file": {
+    "compression": "none",
+    "sep": ";",
+    "encoding": "utf-8"
+  },
+  "columns": {
+    "date": "datainfracao",
+    "date_formats": ["%Y-%m-%d", "%d/%m/%Y %H:%M", "%Y/%m/%d %H:%M:%S.%f", "%Y/%m/%d"]
+  },
+  "filters": [],
+  "period": {"start": null, "end": "last_record"},
+  "sparse_min_records": 3,
+  "series": [
+    {
+      "name": "notices",
+      "kind": "count",
+      "description": "Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment"
+    }
+  ],
+  "domain": "CTTU (Autarquia de Trânsito e Transporte Urbano do Recife), the traffic authority of the city of Recife, publishes every traffic infraction recorded in the city under the Brazilian Traffic Code (Código de Trânsito Brasileiro), one file per year. Each record is one infraction, dated when it was committed, recorded either by traffic agents (paper or electronic notebooks, including agents of agreements with the state military police) or by electronic equipment (speed cameras, red-light cameras, electronic speed bumps). The files are published once a year, so the series ends at the last published month. There is no notice number and no fine value in the files.",
+  "record_label": "traffic infractions",
+  "events_file": "profiles/events/recife-traffic-enforcement.json",
+  "events_include_suggested": false,
+  "event_sources": {"wikipedia": {"lang": "pt", "title": "{year} no Brasil"}},
+  "categories": {
+    "PDC": "Policy-Driven Change: traffic legislation, new enforcement equipment or programmes, agency restructuring or political transition",
+    "SP": "Seasonal Pattern: a recurring annual cycle (holidays, Carnival, school calendar)",
+    "DQE": "Data-Quality Event: reporting failure, system migration, backlog, duplication or retroactive correction",
+    "GES": "Genuine Enforcement Shift: a real change in enforcement intensity or driver behaviour not explained by the above"
+  }
+}

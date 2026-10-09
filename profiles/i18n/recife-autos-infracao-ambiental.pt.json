@@ -1,0 +1,14 @@
+{
+  "_comment": "Portuguese for this profile's dashboard (src/translate.py): 'texts' are hand-written translations of the profile's own texts (title, series descriptions), used as they are; 'glossary' guides the machine translation of the rest (the LLM's reasoning, event labels). Kept apart from the profile so editing it never changes what the LLM-as-a-Judge receives.",
+  "texts": {
+    "Environmental infraction notices of the city of Recife, Brazil": "Autos de infração ambiental do Recife, Brasil",
+    "Number of environmental infraction notices of the month, dated by the inspection that originated them": "Número de autos de infração ambiental do mês, datados pela vistoria que os originou"
+  },
+  "glossary": {
+    "environmental infraction notice": "auto de infração ambiental",
+    "environmental infraction notices": "autos de infração ambiental",
+    "inspection": "vistoria",
+    "Change of municipal administration in Recife": "Troca de gestão municipal no Recife",
+    "Brazil": "Brasil"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_comment": "Portuguese for this profile's dashboard (src/translate.py): 'texts' are hand-written translations of the profile's own texts (title, series descriptions), used as they are; 'glossary' guides the machine translation of the rest (the LLM's reasoning, event labels). Kept apart from the profile so editing it never changes what the LLM-as-a-Judge receives.",
+  "texts": {
+    "Traffic infraction notices of the city of Recife (CTTU), Brazil": "Infrações de trânsito do Recife (CTTU), Brasil",
+    "Number of traffic infractions recorded in the month by Recife's traffic authority, by its agents and by electronic enforcement equipment": "Número de infrações de trânsito registradas no mês pela CTTU, por agentes e por equipamentos eletrônicos de fiscalização"
+  },
+  "glossary": {
+    "traffic infraction": "infração de trânsito",
+    "traffic infractions": "infrações de trânsito",
+    "speed camera": "radar",
+    "speed cameras": "radares",
+    "red-light camera": "fotossensor",
+    "Traffic Code": "Código de Trânsito Brasileiro",
+    "traffic authority": "autarquia de trânsito",
+    "Change of municipal administration in Recife": "Troca de gestão municipal no Recife",
+    "Brazil": "Brasil"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_comment": "Known contextual events for the Recife traffic profile, given to the LLM-as-a-Judge (events within +-6 months of an anomaly). Deliberately minimal (federal traffic laws, changes of municipal administration, events that changed traffic in the city): it is meant to be extended with `main.py suggest-events` and checked by a steward. 'status' is verified, suggested or rejected.",
+  "events": [
+    {"month": "2008-06", "kind": "policy", "label": "Lei Seca: zero tolerance for alcohol at the wheel, with heavier penalties", "source": "Lei 11.705, de 19/06/2008", "status": "verified"},
+    {"month": "2009-01", "kind": "political", "label": "Change of municipal administration in Recife", "source": "Posse do prefeito João da Costa, 01/01/2009", "status": "verified"},
+    {"month": "2012-12", "kind": "policy", "label": "New Lei Seca: stricter evidence rules for drunk driving and a higher fine", "source": "Lei 12.760, de 20/12/2012", "status": "verified"},
+    {"month": "2013-01", "kind": "political", "label": "Change of municipal administration in Recife", "source": "Posse do prefeito Geraldo Julio, 01/01/2013", "status": "verified"},
+    {"month": "2014-06", "kind": "external", "label": "FIFA World Cup matches in the Recife metropolitan area (Arena Pernambuco)", "source": "Copa do Mundo FIFA de 2014, jogos em junho de 2014", "status": "verified"},
+    {"month": "2016-11", "kind": "policy", "label": "Traffic Code amendment in force: higher fine values and new infractions", "source": "Lei 13.281, de 04/05/2016, em vigor a partir de 01/11/2016", "status": "verified"},
+    {"month": "2020-03", "kind": "external", "label": "COVID-19 pandemic declared; public-health emergency measures in Brazil", "source": "OMS, 11/03/2020; Decreto Legislativo 6/2020", "status": "verified"},
+    {"month": "2021-01", "kind": "political", "label": "Change of municipal administration in Recife", "source": "Posse do prefeito João Campos, 01/01/2021", "status": "verified"},
+    {"month": "2021-04", "kind": "policy", "label": "Traffic Code amendment in force: new points system, licence validity and penalties", "source": "Lei 14.071, de 13/10/2020, em vigor a partir de 12/04/2021", "status": "verified"}
+  ]
+}

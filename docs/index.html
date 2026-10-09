@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5L-TEP Layer 3 · Anomaly Detection</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<!-- Every label marked data-i18n is translated by app.js (English / Portuguese). -->
+<nav class="topbar">
+  <a id="repo-link" href="https://github.com/lsp3cesarschool/5ltep-layer3" data-i18n="back">← Back to the repository</a>
+  <span class="muted">·</span>
+  <a id="readme-link" href="https://github.com/lsp3cesarschool/5ltep-layer3#readme">README</a>
+  <span class="muted">·</span>
+  <a id="leiame-link" href="https://github.com/lsp3cesarschool/5ltep-layer3/blob/main/LEIAME.md" lang="pt">LEIAME</a>
+  <span class="lang-switch">
+    <a id="lang-en" href="?lang=en">English</a>
+    <span class="muted">·</span>
+    <a id="lang-pt" href="?lang=pt" lang="pt">Português</a>
+  </span>
+</nav>
+<header>
+  <div>
+    <p class="eyebrow" data-i18n="eyebrow">5L-TEP · Layer 3 · Anomaly Detection</p>
+    <h1 id="title" data-i18n="loading">Loading…</h1>
+    <p class="muted" id="subtitle"></p>
+  </div>
+  <div class="actions">
+    <label id="profile-picker" hidden data-i18n-title="dataset_hint"><span data-i18n="dataset">Dataset</span> <select id="profile"></select></label>
+    <a class="button" id="run-link" target="_blank" rel="noopener" data-i18n="run">Run Layer 3 now ↗</a>
+    <a class="button secondary" id="issues-link" target="_blank" rel="noopener" data-i18n="queue">Review queue ↗</a>
+    <a class="button secondary" id="events-link" target="_blank" rel="noopener" data-i18n="suggest">Suggest events ↗</a>
+    <a class="button secondary" id="rejudge-link" target="_blank" rel="noopener" data-i18n="rejudge"
+       data-i18n-title="rejudge_hint">Re-judge ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="cards" id="cards"></section>
+
+  <section id="checks-section">
+    <h2 data-i18n="checks_h">Source checks</h2>
+    <p class="muted" data-i18n="checks_note">Problems of the published files that can distort a monthly series.</p>
+    <ul class="checks" id="checks"></ul>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 data-i18n="series_h">Monthly series</h2>
+      <label class="muted"><input type="checkbox" id="logscale" checked> <span data-i18n="log">log scale</span></label>
+    </div>
+    <p class="muted" data-i18n="series_note">Points mark months flagged by the ensemble (≥2 of 4 detectors), coloured by the
+      LLM-as-a-Judge label (or the steward's decision, when there is one); click a point to see its details below.
+      Dashed lines mark Page-Hinkley alarms (sustained level shifts).</p>
+    <div id="charts"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 data-i18n="anomalies_h">Anomalies</h2>
+      <select id="filter">
+        <option value="all" data-i18n="f_all">All</option>
+        <option value="review" data-i18n="f_review">Needs review</option>
+        <option value="pending" data-i18n="f_pending">Not judged yet</option>
+      </select>
+    </div>
+    <p class="muted" id="mt-note" hidden data-i18n="mt_note"></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th data-i18n="th_month">Month</th><th data-i18n="th_series">Series</th><th>Ensemble</th><th>LLM</th><th>C</th>
+          <th data-i18n="th_steward">Steward</th><th data-i18n="th_reasoning">Reasoning (majority run)</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 data-i18n="events_h">Event calendar</h2>
+      <span class="muted" data-i18n="events_note">verified by a steward · suggested by the LLM (unverified) · currency reforms</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th data-i18n="th_month">Month</th><th data-i18n="th_kind">Kind</th><th data-i18n="th_event">Event</th>
+          <th data-i18n="th_status">Status</th><th data-i18n="th_source">Source</th></tr></thead>
+        <tbody id="events"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="prov_h">Provenance of this result</h2>
+    <dl id="provenance"></dl>
+  </section>
+</main>
+
+<footer class="muted">
+  <span data-i18n="toolkit">5L-TEP Layer 3 toolkit</span> ·
+  <a id="footer-repo-link" href="https://github.com/lsp3cesarschool/5ltep-layer3" data-i18n="source_code">source code</a> ·
+  <a href="https://github.com/lsp3cesarschool/5ltep-layer4" data-i18n="layer4">Layer 4 (provenance)</a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

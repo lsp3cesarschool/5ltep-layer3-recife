@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this repository or its results, please cite the master's thesis it is part of (preferred citation below)."
+title: "5LTEP-L3 · Recife instance (control experiment)"
+abstract: >-
+  Third instance of the 5L-TEP Layer 3 anomaly detection toolkit (5ltep-layer3),
+  applied to two datasets of the open data portal of the city of Recife (traffic
+  infractions recorded by CTTU, and environmental infraction notices), as a control
+  case for the IBAMA study: the same code, configured only by declarative profiles.
+  Set up by the author; not operated by or affiliated with the City of Recife. Part
+  of the master's thesis cited below.
+type: software
+authors:
+  - family-names: Pinheiro
+    given-names: Luciano Santos
+    affiliation: "CESAR School, Recife, Brazil"
+    email: lsp3@cesar.school
+  - family-names: Sérgio
+    given-names: Anderson Tenório
+    affiliation: "CESAR School, Recife, Brazil"
+    email: ats@cesar.school
+repository-code: "https://github.com/lsp3cesarschool/5ltep-layer3-recife"
+url: "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+license: MIT
+version: 0.1.0
+date-released: 2026-10-09
+keywords:
+  - anomaly detection
+  - LLM-as-a-Judge
+  - data quality
+  - open government data
+  - CKAN
+  - reproducibility
+  - FAIR
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: "Engenharia da Confiança (5L-TEP) Aplicada a Dados Abertos do IBAMA: Automação, Inteligência Artificial e Human-in-the-Loop para Avaliação da Qualidade de Big Data através da Plataforma CUPIM"
+  authors:
+    - family-names: Pinheiro
+      given-names: Luciano Santos
+      email: lsp3@cesar.school
+  institution:
+    name: "CESAR School, Programa de Pós-Graduação em Engenharia de Software"
+    city: Recife
+    country: BR
+  year: 2027
+  notes: "In preparation. Advisor: Prof. Anderson Tenório Sérgio (ats@cesar.school)."

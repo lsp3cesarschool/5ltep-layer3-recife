@@ -1,0 +1,44 @@
+{
+  "id": "recife-autos-infracao-ambiental",
+  "title": "Environmental infraction notices of the city of Recife, Brazil",
+  "country": "Brazil",
+  "scheduled": true,
+  "source": {
+    "portal_url": "https://dados.recife.pe.gov.br",
+    "dataset_id": "autos-de-infracao-ambiental",
+    "resource_pattern": "pessoa f[íi]sica e jur[íi]dica autuadas - \\d{4}",
+    "resource_format": "CSV",
+    "license_note": "ODbL (Dados Recife, the open data portal of the city of Recife)"
+  },
+  "file": {
+    "compression": "none",
+    "sep": ";",
+    "encoding": "utf-8"
+  },
+  "columns": {
+    "date": "DATA DA VISTORIA",
+    "key": "Nº AUTO",
+    "date_formats": ["%Y-%m-%d"]
+  },
+  "filters": [],
+  "period": {"start": null, "end": "last_record"},
+  "sparse_min_records": 3,
+  "series": [
+    {
+      "name": "notices",
+      "kind": "count",
+      "description": "Number of environmental infraction notices of the month, dated by the inspection that originated them"
+    }
+  ],
+  "domain": "The Secretariat of Environment and Sustainability of the city of Recife (Secretaria de Meio Ambiente e Sustentabilidade) publishes the environmental infraction notices (autos de infração ambiental) it issues under municipal environmental law to people, companies and properties, one file per year. Each record is one notice, dated by the inspection (vistoria) that originated it. Only 2021 to 2023 are published, so the series is short: 36 months, the minimum the detectors accept.",
+  "record_label": "environmental infraction notices",
+  "events_file": "profiles/events/recife-environmental-enforcement.json",
+  "events_include_suggested": false,
+  "event_sources": {"wikipedia": {"lang": "pt", "title": "{year} no Brasil"}},
+  "categories": {
+    "PDC": "Policy-Driven Change: legislation, regulation, agency restructuring or political transition",
+    "SP": "Seasonal Pattern: a recurring annual inspection cycle",
+    "DQE": "Data-Quality Event: reporting failure, system migration, backlog, duplication or retroactive correction",
+    "GES": "Genuine Enforcement Shift: a real change in inspection or enforcement intensity not explained by the above"
+  }
+}

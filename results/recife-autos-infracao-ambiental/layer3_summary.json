@@ -1,0 +1,172 @@
+{
+ "toolkit": "5ltep-layer3 v0.1.0",
+ "generated_at": "2026-10-09T19:39:59+00:00",
+ "profile": {
+  "id": "recife-autos-infracao-ambiental",
+  "title": "Environmental infraction notices of the city of Recife, Brazil",
+  "filters": [],
+  "period": {
+   "start": null,
+   "end": "last_record"
+  }
+ },
+ "source": {
+  "profile": "recife-autos-infracao-ambiental",
+  "profile_sha256": "4adbe928d95e443160c2c976a4ed6966545bf9821f3fb1cba347bdd2ee370349",
+  "as_of": "2026-10-09T18:53:55.644268",
+  "dataset_id": "autos-de-infracao-ambiental",
+  "dataset_url": "https://dados.recife.pe.gov.br/dataset/autos-de-infracao-ambiental",
+  "dataset_metadata_modified": "2026-03-02T13:51:20.518521",
+  "license": "Open Data Commons Open Database License (ODbL)",
+  "resource_name": "3 resources matching 'pessoa f[íi]sica e jur[íi]dica autuadas - \\\\d{4}'",
+  "resource_url": "https://dados.recife.pe.gov.br/dataset/autos-de-infracao-ambiental",
+  "download_started_at": "2026-10-09T18:53:57+00:00",
+  "size_bytes": 701644,
+  "checksum_sha256": "7d9b71ac3825fe54b42078abdc66d2252318fc804bb5c43cfec3f9604801abac",
+  "resources": [
+   {
+    "resource_id": "081eed8c-e56d-4107-ae74-6ec2c921b14a",
+    "resource_name": "Pessoa Física e Jurídica Autuadas - 2021",
+    "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/081eed8c-e56d-4107-ae74-6ec2c921b14a/download/pessoa-fisica-e-juridica-autuadas-2021.csv",
+    "download_started_at": "2026-10-09T18:53:57+00:00",
+    "size_bytes": 193073,
+    "checksum_sha256": "bb522e2d3dc52f88205fdf553e8be4c686c7a4770d4f5d16e5e339907abbf44d"
+   },
+   {
+    "resource_id": "18bcd423-3e91-4f7b-8cdb-644a3efecf21",
+    "resource_name": "Pessoa Física e Jurídica Autuadas - 2022",
+    "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/18bcd423-3e91-4f7b-8cdb-644a3efecf21/download/pessoa-fisica-e-juridica-autuadas-2022.csv",
+    "download_started_at": "2026-10-09T18:53:59+00:00",
+    "size_bytes": 224296,
+    "checksum_sha256": "5f463eba75d8efde8a674749bbbdfa9ab7b3116dc69c7303a4020e1841e2d4a7"
+   },
+   {
+    "resource_id": "899de797-b869-4c51-98a5-7b91401b058b",
+    "resource_name": "Pessoa Física e Jurídica Autuadas - 2023",
+    "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/899de797-b869-4c51-98a5-7b91401b058b/download/pessoa-fisica-e-juridica-autuadas-2023.csv",
+    "download_started_at": "2026-10-09T18:54:01+00:00",
+    "size_bytes": 284275,
+    "checksum_sha256": "0691c2a12802e4413f0a6fa0423b366ac7186b9f8806134aa2d0f6823e8bcc4f"
+   }
+  ],
+  "aggregation": {
+   "rows_read": 3215,
+   "rows_after_filters": 3215,
+   "rows_invalid_date": 0,
+   "rows_missing_key": 0,
+   "rows_duplicate_key_dropped": 0,
+   "rows_excluded": 0,
+   "rows_future_date": 0,
+   "last_record_month": "2023-12",
+   "first_month": "2021-01",
+   "last_complete_month": "2023-12"
+  },
+  "source_checks": [
+   {
+    "check": "publication_lag",
+    "level": "info",
+    "params": {
+     "last_record_month": "2023-12",
+     "months_without_records": 33
+    }
+   }
+  ],
+  "analysis_period": [
+   "2021-01",
+   "2023-12"
+  ]
+ },
+ "series": {
+  "notices": "Number of environmental infraction notices of the month, dated by the inspection that originated them"
+ },
+ "analysis_period": [
+  "2021-01",
+  "2023-12"
+ ],
+ "months": 36,
+ "method_parameters": {
+  "baseline_window": 12,
+  "zscore_k": 3.0,
+  "mad_k": 3.0,
+  "if_contamination": 0.05,
+  "lstm_window": 12,
+  "lstm_units": 64,
+  "lstm_dropout": 0.2,
+  "lstm_epochs": 60,
+  "lstm_percentile": 99.0,
+  "ensemble_min_votes": 2,
+  "ph_delta": 0.5,
+  "ph_lambda": 12.0,
+  "drift_tolerance_months": 2,
+  "random_seed": 42,
+  "llm_model": "qwen3:4b",
+  "llm_runs": 3,
+  "llm_temperature": 0.7,
+  "llm_seeds": [
+   11,
+   22,
+   33
+  ],
+  "llm_num_predict": 400,
+  "llm_num_ctx": 4096,
+  "context_months": 12,
+  "event_window_months": 6,
+  "prompt_version": "v2",
+  "advisory_consistency": 0.6,
+  "l3_window_months": 12
+ },
+ "environment": {
+  "python": "3.11.17",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "packages": {
+   "pandas": "3.0.6",
+   "numpy": "2.4.6",
+   "scikit-learn": "1.9.1",
+   "torch": "2.14.1+cpu",
+   "requests": "2.34.2"
+  }
+ },
+ "anomalies": {
+  "flagged": 1,
+  "by_series": {
+   "notices": 1
+  },
+  "judged": 1,
+  "pending_judgment": 0,
+  "drift_points": {
+   "notices": 0
+  }
+ },
+ "llm": {
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "judged_by": {
+   "qwen3:4b / prompt v2": 1
+  },
+  "judged_by_other_model_or_prompt": 0,
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "categories": {
+   "DQE": 1
+  },
+  "mean_consistency": 0.667,
+  "unanimous_rate": 0.0
+ },
+ "hitl": {
+  "issues": 1,
+  "decided": 0,
+  "open_by_level": {
+   "pending": 1
+  },
+  "human_llm_agreement": null
+ },
+ "layer3": {
+  "window": [
+   "2023-01",
+   "2023-12"
+  ],
+  "pairs_evaluated": 12,
+  "l3_rate": 1.0,
+  "l3_pass": true,
+  "anomaly_flags": []
+ }
+}

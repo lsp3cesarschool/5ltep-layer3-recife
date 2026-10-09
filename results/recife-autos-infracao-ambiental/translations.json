@@ -1,0 +1,49 @@
+{
+ "pt": {
+  "7a28a21c5cfb76038e7c9b215309edbf332b40412d1123feb3097f299c044c30": {
+   "text": "Autos de infração ambiental do Recife, Brasil",
+   "model": "manual",
+   "version": "manual"
+  },
+  "1b7fca9e544faa5a28241d7b6c6980e9954fac25159afc6c2ef237b2a4b0e868": {
+   "text": "Número de autos de infração ambiental do mês, datados pela vistoria que os originou",
+   "model": "manual",
+   "version": "manual"
+  },
+  "39df3a69b351c86faf5d8f9cc04dfa0c2b81201ca6099b6492b500a56af01828": {
+   "text": "Mudança por política: legislação, regulamentação, reorganização de agências ou transição política",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "728342ebd5988e44774cec5c94815be276b24cc7d6f0ce0408825c0eff8f36d7": {
+   "text": "Padrão sazonal: um ciclo recorrente de vistoria anual",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "6653d4619f3da951fbe2e946dc1bb96be8d2ede8fe82e3e4f0be31e5db3e1868": {
+   "text": "Evento de qualidade de dados: falha no relatório, migração de sistema, acúmulo, duplicação ou correção retroativa",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "e6b33126bba3a07a703d4503b9b627ce5506e345be461b23e6b3a3fd5136bc50": {
+   "text": "Mudança genuína de fiscalização: uma mudança real na intensidade de vistoria ou fiscalização não explicada pelas acima",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "2c57e9e569f36f668b221dc14c52aebd395c4927faa72ebd79d46f6c4dc50ce1": {
+   "text": "COVID-19 pandemic declared; public-health emergency measures in Brazil",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "3dcde3ab6f92a0bb4954d1c217c8d6d27e4f7f166950b259c5936b7415adb81f": {
+   "text": "Troca de gestão municipal no Recife",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  },
+  "76aaeb56cb3fa836960d89997a3d30973334573783010d6d0f3fc0ff55306471": {
+   "text": "The anomalous month is 2:22-12 with 37 notices (down 57% from median 86). Seasonality check shows no historical data for calendar month 12 (n/a), so no seasonal pattern. No policy events in +-6 months. Data quality checks: no excluded or no_id records, consistent system (all months have 0 excluded/no_id), and the drop is not a sustained level shift (Page-Hinkley test negative). The deviation is large but explained by a data issue: the year 2022-12 might be a retroactive correction or backlog resolution, as the series has only 3 years (2021-2023) and the drop is abrupt. No genuine enforcement shift (no events to explain it).",
+   "model": "qwen3:4b",
+   "version": "7bf0f8efad8a"
+  }
+ }
+}

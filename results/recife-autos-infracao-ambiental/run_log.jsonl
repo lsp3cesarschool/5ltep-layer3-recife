@@ -1,0 +1,4 @@
+{"at": "2026-10-09T18:54:05+00:00", "stage": "detect", "run_id": "37976299509", "months": 36, "flagged": 1, "from_series": false}
+{"at": "2026-10-09T18:57:01+00:00", "stage": "judge", "run_id": "37976299509", "judged_now": 1, "pending_before": 1, "model": {"model": "qwen3:4b", "ollama_version": "0.35.0", "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7", "quantization": "Q4_K_M"}}
+{"at": "2026-10-09T18:58:13+00:00", "stage": "translate", "run_id": "37976299509", "translated": 7, "failed": 0, "remaining": 0}
+{"at": "2026-10-09T19:39:59+00:00", "stage": "issues", "run_id": "37976299509", "created": [{"anomaly_id": "notices:2022-12", "issue": 1, "review_level": "pending"}], "shifts_created": [], "superseded": [], "remaining": 0, "notified_rejudged": []}

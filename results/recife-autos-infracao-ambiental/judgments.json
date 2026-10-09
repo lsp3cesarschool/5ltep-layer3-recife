@@ -1,0 +1,44 @@
+{
+ "notices:2022-12": {
+  "series": "notices",
+  "month": "2022-12",
+  "category": "DQE",
+  "consistency": 0.667,
+  "review_level": "pending",
+  "ensemble_score": 0.5718,
+  "votes": 2,
+  "near_drift": false,
+  "runs": [
+   {
+    "category": "DQE",
+    "confidence": 0.8,
+    "reasoning": "The anomalous month is 2022-12 with 37 notices (down 57% from median 86). Seasonality check shows no historical data for calendar month 12 (n/a), so no seasonal pattern. No policy events in +-6 months. Data quality checks: no excluded or no_id records, consistent system (all months have 0 excluded/no_id), and the drop is not a sustained level shift (Page-Hinkley test negative). The deviation is large but explained by a data issue: the year 2022-12 might be a retroactive correction or backlog resolution, as the series has only 3 years (2021-2023) and the drop is abrupt. No genuine enforcement shift (no events to explain it).",
+    "seed": 11,
+    "latency_s": 66.4
+   },
+   {
+    "category": "GES",
+    "confidence": 0.85,
+    "reasoning": "The anomalous month is December 2022 (37 notices, median of prior 12 months: 86). Seasonality check shows no historical data for December (n/a) and no prior years with same deviation. Data quality checks: no excluded or no_id records, no system changes indicated. No policy events within 6 months. The drop is abrupt but not sustained (Page-Hinkley test negative). Since the series is short (2021-2023), no seasonal pattern can be confirmed. The anomaly is likely a genuine enforcement shift (GES) as no other category fits.",
+    "seed": 22,
+    "latency_s": 32.3
+   },
+   {
+    "category": "DQE",
+    "confidence": 0.2,
+    "reasoning": "The anomalous month is 2022-12 with 37 notices, 57% below the median of previous 12 months (86). Seasonality check shows no previous years have data for calendar month 12 (n/a), so seasonal pattern (SP) is impossible. No known policy events (PDC) in +-6 months. Data quality checks: no excluded records or no_id entries in any month; the drop is not explained by system changes (no retroactive corrections). The Page-Hinkley test shows no sustained level shift (so not a temporary anomaly). The drop is severe but no data issues (DQE) or genuine enforcement shift (GES) are indicated. Confidence is low since the deviation is large but no clear explanation.",
+    "seed": 33,
+    "latency_s": 38.5
+   }
+  ],
+  "prompt": "Series: notices - Number of environmental infraction notices of the month, dated by the inspection that originated them.\nAnomalous month: 2022-12 (calendar month 12).\nValue: 37; median of the previous 12 months: 86 (-57%; ratio 0.43).\nSeasonality check - ratio of calendar month 12 to the median of its previous 12 months, in the previous years: n/a.\nThe same calendar month deviated in the same direction (below 1) in 0 of these 0 years.\nThe same calendar month was also flagged as anomalous in: no other year.\nDetectors that flagged it: zscore, mad (2 of 4); ensemble score 0.57 (0.5 = at threshold).\nA Page-Hinkley test found a sustained level shift within 2 months: no.\nOther series flagged in the same month: none.\n\nMonthly context (+-12 months). excluded = excluded records; no_id = records without an identifier.\nmonth   | notices | excluded | no_id\n2021-12 | 79 | 0 | 0\n2022-01 | 109 | 0 | 0\n2022-02 | 120 | 0 | 0\n2022-03 | 96 | 0 | 0\n2022-04 | 93 | 0 | 0\n2022-05 | 84 | 0 | 0\n2022-06 | 61 | 0 | 0\n2022-07 | 87 | 0 | 0\n2022-08 | 79 | 0 | 0\n2022-09 | 124 | 0 | 0\n2022-10 | 82 | 0 | 0\n2022-11 | 55 | 0 | 0\n2022-12 | 37 | 0 | 0  <== anomaly\n2023-01 | 105 | 0 | 0\n2023-02 | 56 | 0 | 0\n2023-03 | 121 | 0 | 0\n2023-04 | 89 | 0 | 0\n2023-05 | 123 | 0 | 0\n2023-06 | 94 | 0 | 0\n2023-07 | 122 | 0 | 0\n2023-08 | 152 | 0 | 0\n2023-09 | 104 | 0 | 0\n2023-10 | 131 | 0 | 0\n2023-11 | 105 | 0 | 0\n2023-12 | 92 | 0 | 0\n\nNo known events within +-6 months.",
+  "model": "qwen3:4b",
+  "model_source": "benchmark",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.35.0",
+  "temperature": 0.7,
+  "prompt_version": "v2",
+  "data_fingerprint": "f37294d453c00b618552feb1096743f561e17a2f04613248902852916fbfc49d",
+  "judged_at": "2026-10-09T18:57:01+00:00"
+ }
+}

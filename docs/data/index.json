@@ -1,0 +1,9 @@
+{
+ "profiles": [
+  {
+   "id": "recife-autos-infracao-ambiental",
+   "title": "Environmental infraction notices of the city of Recife, Brazil"
+  }
+ ],
+ "default": "recife-autos-infracao-ambiental"
+}

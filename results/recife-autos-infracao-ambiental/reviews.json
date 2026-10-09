@@ -1,0 +1,14 @@
+{
+ "notices:2022-12": {
+  "profile": "recife-autos-infracao-ambiental",
+  "anomaly_id": "notices:2022-12",
+  "issue": 1,
+  "url": "https://github.com/lsp3cesarschool/5ltep-layer3-recife/issues/1",
+  "state": "open",
+  "status": "pending",
+  "steward_category": null,
+  "review_level": "pending",
+  "closed_at": null,
+  "updated_at": "2026-10-09T19:39:56Z"
+ }
+}

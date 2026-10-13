@@ -1,4 +1,4 @@
-# 5LTEP-L3 · instância Recife (experimento de controle)
+# 5LTEP-L3 · instância Recife (aplicação em outro contexto)
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/tests.yml) [![Camada 3 · trânsito](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer3-recife%2Fmain%2Fdocs%2Fdata%2Fstatus-recife-infracoes-transito.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/layer3.yml) [![Camada 3 · meio ambiente](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer3-recife%2Fmain%2Fdocs%2Fdata%2Fstatus-recife-autos-infracao-ambiental.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/layer3.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -6,7 +6,7 @@
 
 **Detecção de anomalias da Camada 3 do 5L-TEP aplicada a dois conjuntos do portal de dados abertos da
 Prefeitura do Recife: uma terceira instância do [5ltep-layer3](https://github.com/lsp3cesarschool/5ltep-layer3/blob/main/LEIAME.md),
-montada pelo autor como caso de controle do estudo do IBAMA, ao lado da
+montada pelo autor como aplicação do mesmo sistema em outro contexto, ao lado da
 [instância ANEEL](https://github.com/lsp3cesarschool/5ltep-layer3-aneel/blob/main/LEIAME.md).**
 
 | Recurso | O que tem lá |
@@ -35,7 +35,9 @@ de trânsito, o Carnaval, uma troca de gestão) e quais parecem um **problema no
 registros, um lote lançado de uma vez). Os não explicados vão primeiro para uma pessoa; a IA só propõe,
 e um gestor de dados confirma ou corrige toda decisão que leve a uma ação.
 
-## Por que um experimento de controle
+## Por que aplicar o sistema em outro contexto
+
+Esta instância demonstra a reutilização do mesmo sistema em outro contexto e permite avaliar os limites dessa transferência.
 
 Um método que funciona num conjunto de dados pode ter aprendido só as manias desse conjunto. IBAMA
 (federal, ambiental, um zip) e ANEEL (federal, setor elétrico, um CSV) são órgãos federais; o Recife é
@@ -59,7 +61,7 @@ O que difere do repositório principal é só:
 
 Os perfis e resultados do IBAMA não estão incluídos. Todo o resto (detectores, LLM-as-a-Judge, revisão
 humana, verificações da fonte, painel, workflows, testes) é idêntico a
-[`5ltep-layer3@65fa850`](https://github.com/lsp3cesarschool/5ltep-layer3/tree/65fa8503f94d6e41f5350c455f739453ba4bcf9a),
+[`5ltep-layer3@6a6c9ce`](https://github.com/lsp3cesarschool/5ltep-layer3/tree/6a6c9ce354722c1c3acd27a3f6d9b089e2f70a5c),
 e a instância montada passa pela mesma suíte de testes antes de cada atualização.
 
 ## Termos-chave
@@ -132,7 +134,7 @@ em resumo:
   "*ano* no Brasil" e abre um pull request; as sugestões ficam marcadas `suggested` até um gestor
   verificá-las.
 
-## O que o experimento de controle mostrou
+## O que a aplicação do sistema em outro contexto mostrou
 
 *Os resultados de detecção e julgamento aparecem no painel depois da primeira execução no GitHub
 Actions; serão resumidos aqui a partir dela, não de ensaios locais.*

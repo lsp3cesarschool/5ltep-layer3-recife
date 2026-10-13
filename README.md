@@ -1,4 +1,4 @@
-# 5LTEP-L3 · Recife instance (control experiment)
+# 5LTEP-L3 · Recife instance (application in another context)
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/tests.yml) [![Layer 3 · traffic](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer3-recife%2Fmain%2Fdocs%2Fdata%2Fstatus-recife-infracoes-transito.json)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/layer3.yml) [![Layer 3 · environment](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer3-recife%2Fmain%2Fdocs%2Fdata%2Fstatus-recife-autos-infracao-ambiental.json)](https://github.com/lsp3cesarschool/5ltep-layer3-recife/actions/workflows/layer3.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -6,7 +6,7 @@
 
 **5L-TEP Layer 3 anomaly detection applied to two datasets of the open data portal of the city of
 Recife: a third instance of [5ltep-layer3](https://github.com/lsp3cesarschool/5ltep-layer3), set up by
-the author as a control case for the IBAMA study, alongside the
+the author as an application of the same system in another context, alongside the
 [ANEEL instance](https://github.com/lsp3cesarschool/5ltep-layer3-aneel).**
 
 | Resource | What you find there |
@@ -35,7 +35,9 @@ from the usual pattern, and uses a local AI model to check which departures have
 month with no records, a batch entered at once). The unexplained ones go to a person first; the AI only
 proposes, and a data steward confirms or corrects every decision that leads to action.
 
-## Why a control experiment
+## Why apply the system in another context
+
+This instance demonstrates reuse of the same system in another context and helps assess the limits of that transfer.
 
 A method that works on one dataset may only have learned that dataset's quirks. IBAMA (federal,
 environmental, one zip) and ANEEL (federal, electricity, one CSV) are both federal agencies; Recife is
@@ -59,7 +61,7 @@ What differs from the main repository is only:
 
 The IBAMA profiles and results are not included. Everything else (detectors, LLM-as-a-Judge,
 human-in-the-loop review, source checks, dashboard, workflows, tests) is identical to
-[`5ltep-layer3@65fa850`](https://github.com/lsp3cesarschool/5ltep-layer3/tree/65fa8503f94d6e41f5350c455f739453ba4bcf9a),
+[`5ltep-layer3@6a6c9ce`](https://github.com/lsp3cesarschool/5ltep-layer3/tree/6a6c9ce354722c1c3acd27a3f6d9b089e2f70a5c),
 and the built instance passes the same test suite before every update.
 
 ## Key terms
@@ -130,7 +132,7 @@ in short:
   "*year* no Brasil" and opens a pull request; suggestions are marked `suggested` until a steward
   verifies them.
 
-## What the control experiment showed
+## What applying the system in another context showed
 
 *Results of detection and judgment appear on the dashboard after the first run on GitHub Actions;
 they will be summarised here from that run, not from local rehearsals.*

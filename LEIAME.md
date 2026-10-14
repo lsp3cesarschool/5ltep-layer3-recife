@@ -136,10 +136,25 @@ em resumo:
 
 ## O que a aplicação do sistema em outro contexto mostrou
 
-*Os resultados de detecção e julgamento aparecem no painel depois da primeira execução no GitHub
-Actions; serão resumidos aqui a partir dela, não de ensaios locais.*
+*Primeira execução no GitHub Actions, 09/10/2026; um registro do momento, o painel sempre mostra o
+estado atual.*
 
-O que a montagem da instância já mostrou:
+**Trânsito.** 229 meses analisados (2006-05 a 2025-05); 12 meses anômalos e 7 alarmes de Page-Hinkley
+(mudanças de nível sustentadas). O juiz (`qwen3:4b`, a escolha do benchmark) os rotulou GES 5, DQE 4,
+SP 2, PDC 1. Três dos quatro DQE estão no começo da série (2006-06, 2006-10, 2006-11), onde o arquivo
+de 2006 é pequeno (2 MB, contra 40 a 200 MB nos outros anos). O primeiro mês da pandemia, 2020-04, foi
+rotulado como sazonal com as três execuções discordando (consistência 0,33), e o mês seguinte, 2020-05,
+como mudança por política: o tipo de decisão que o desenho deixa para um gestor.
+
+**Meio ambiente.** 36 meses (2021-01 a 2023-12); um mês anômalo, 2022-12, rotulado DQE.
+
+**Revisão.** 11 issues de revisão abertas (5 delas `review:pending`, pelos rótulos DQE), sem gestor
+designado, por desenho. Os rótulos acima são propostas do modelo, não constatações.
+
+**Verificações da fonte.** Só itens *tratados* nos dois conjuntos: os formatos de data dos arquivos de
+trânsito e o atraso de publicação dos dois (nenhum registro depois de 2025-05 e de 2023-12).
+
+O que a montagem da instância mostrou:
 
 - **A reutilização pediu três campos novos de perfil, no código comum.** O portal do Recife publica os
   dois conjuntos em um recurso por ano, com nomes que nem são consistentes ("Registro **das**

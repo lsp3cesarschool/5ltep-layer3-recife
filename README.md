@@ -134,10 +134,25 @@ in short:
 
 ## What applying the system in another context showed
 
-*Results of detection and judgment appear on the dashboard after the first run on GitHub Actions;
-they will be summarised here from that run, not from local rehearsals.*
+*First run on GitHub Actions, 09/10/2026; a snapshot for the record, the dashboard always shows the
+current state.*
 
-What setting the instance up already showed:
+**Traffic.** 229 months analysed (2006-05 to 2025-05); 12 anomalous months and 7 Page-Hinkley alarms
+(sustained level shifts). The judge (`qwen3:4b`, the benchmark's choice) labelled them GES 5, DQE 4,
+SP 2, PDC 1. Three of the four DQE are at the very start of the series (2006-06, 2006-10, 2006-11),
+where the 2006 file is small (2 MB against 40 to 200 MB in the other years). The first month of the
+pandemic, 2020-04, was labelled seasonal with the three runs disagreeing (consistency 0.33), and the
+next month, 2020-05, policy-driven: the kind of decision the design leaves to a steward.
+
+**Environment.** 36 months (2021-01 to 2023-12); one anomalous month, 2022-12, labelled DQE.
+
+**Review.** 11 review issues are open (5 of them `review:pending`, for the DQE labels), with no
+steward assigned, by design. The labels above are the model's proposals, not findings.
+
+**Source checks.** Only *handled* items on both datasets: the date formats of the traffic files and
+the publication lag of both (no record after 2025-05 and 2023-12).
+
+What setting the instance up showed:
 
 - **Reuse needed three new profile fields, in the shared code.** The Recife portal publishes both
   datasets as one resource per year, with names that are not even consistent ("Registro **das**

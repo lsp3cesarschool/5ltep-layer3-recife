@@ -1,6 +1,6 @@
 {
  "toolkit": "5ltep-layer3 v0.1.0",
- "generated_at": "2026-10-09T19:39:59+00:00",
+ "generated_at": "2026-11-05T13:48:47+00:00",
  "profile": {
   "id": "recife-autos-infracao-ambiental",
   "title": "Environmental infraction notices of the city of Recife, Brazil",
@@ -13,14 +13,14 @@
  "source": {
   "profile": "recife-autos-infracao-ambiental",
   "profile_sha256": "4adbe928d95e443160c2c976a4ed6966545bf9821f3fb1cba347bdd2ee370349",
-  "as_of": "2026-10-09T18:53:55.644268",
+  "as_of": "2026-11-05T13:42:04.324008",
   "dataset_id": "autos-de-infracao-ambiental",
   "dataset_url": "https://dados.recife.pe.gov.br/dataset/autos-de-infracao-ambiental",
   "dataset_metadata_modified": "2026-03-02T13:51:20.518521",
   "license": "Open Data Commons Open Database License (ODbL)",
   "resource_name": "3 resources matching 'pessoa f[íi]sica e jur[íi]dica autuadas - \\\\d{4}'",
   "resource_url": "https://dados.recife.pe.gov.br/dataset/autos-de-infracao-ambiental",
-  "download_started_at": "2026-10-09T18:53:57+00:00",
+  "download_started_at": "2026-11-05T13:42:05+00:00",
   "size_bytes": 701644,
   "checksum_sha256": "7d9b71ac3825fe54b42078abdc66d2252318fc804bb5c43cfec3f9604801abac",
   "resources": [
@@ -28,7 +28,7 @@
     "resource_id": "081eed8c-e56d-4107-ae74-6ec2c921b14a",
     "resource_name": "Pessoa Física e Jurídica Autuadas - 2021",
     "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/081eed8c-e56d-4107-ae74-6ec2c921b14a/download/pessoa-fisica-e-juridica-autuadas-2021.csv",
-    "download_started_at": "2026-10-09T18:53:57+00:00",
+    "download_started_at": "2026-11-05T13:42:05+00:00",
     "size_bytes": 193073,
     "checksum_sha256": "bb522e2d3dc52f88205fdf553e8be4c686c7a4770d4f5d16e5e339907abbf44d"
    },
@@ -36,7 +36,7 @@
     "resource_id": "18bcd423-3e91-4f7b-8cdb-644a3efecf21",
     "resource_name": "Pessoa Física e Jurídica Autuadas - 2022",
     "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/18bcd423-3e91-4f7b-8cdb-644a3efecf21/download/pessoa-fisica-e-juridica-autuadas-2022.csv",
-    "download_started_at": "2026-10-09T18:53:59+00:00",
+    "download_started_at": "2026-11-05T13:42:07+00:00",
     "size_bytes": 224296,
     "checksum_sha256": "5f463eba75d8efde8a674749bbbdfa9ab7b3116dc69c7303a4020e1841e2d4a7"
    },
@@ -44,7 +44,7 @@
     "resource_id": "899de797-b869-4c51-98a5-7b91401b058b",
     "resource_name": "Pessoa Física e Jurídica Autuadas - 2023",
     "resource_url": "https://dados.recife.pe.gov.br:443/dataset/ac38cabc-0885-4ba6-981c-c90cd4e71118/resource/899de797-b869-4c51-98a5-7b91401b058b/download/pessoa-fisica-e-juridica-autuadas-2023.csv",
-    "download_started_at": "2026-10-09T18:54:01+00:00",
+    "download_started_at": "2026-11-05T13:42:08+00:00",
     "size_bytes": 284275,
     "checksum_sha256": "0691c2a12802e4413f0a6fa0423b366ac7186b9f8806134aa2d0f6823e8bcc4f"
    }
@@ -67,7 +67,7 @@
     "level": "info",
     "params": {
      "last_record_month": "2023-12",
-     "months_without_records": 33
+     "months_without_records": 34
     }
    }
   ],
@@ -117,7 +117,7 @@
  },
  "environment": {
   "python": "3.11.17",
-  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
   "packages": {
    "pandas": "3.0.6",
    "numpy": "2.4.6",
